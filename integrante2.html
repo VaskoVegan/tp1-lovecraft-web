@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expediente: Sergio | Grupo 5B</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación Obligatorio -->
+    <nav class="navbar">
+        <div class="nav-logo">Culto_G5B</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="bitacora.html">Bitácora</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor del Perfil -->
+    <main class="container profile-container">
+        
+        <!-- Botón de Navegación Interna -->
+        <div class="back-nav">
+            <a href="index.html" class="btn-back">← Volver a la Portada</a>
+        </div>
+
+        <section class="profile-card">
+            <!-- 1. Foto / Avatar / Mascota -->
+            <div class="profile-avatar" id="sergio-avatar">👁️</div>
+            
+            <!-- 2, 3 y 4. Información básica -->
+            <h1 class="ancient-title">Sergio</h1>
+            <p class="profile-meta"><strong>Ciudad:</strong> [Tu Ciudad aquí] | <strong>Edad:</strong> [Tu Edad aquí] años</p>
+
+            <div class="profile-details-grid">
+                <!-- 5. Cuatro habilidades -->
+                <div class="details-block">
+                    <h3>Habilidades de Investigación</h3>
+                    <ul class="skills-list">
+                        <li>[Habilidad 1]</li>
+                        <li>[Habilidad 2]</li>
+                        <li>[Habilidad 3]</li>
+                        <li>[Habilidad 4]</li>
+                    </ul>
+                </div>
+
+                <!-- 6. Tres películas favoritas -->
+                <div class="details-block">
+                    <h3>Filmografía Prohibida (Películas)</h3>
+                    <ol>
+                        <li>[Película 1]</li>
+                        <li>[Película 2]</li>
+                        <li>[Película 3]</li>
+                    </ol>
+                </div>
+
+                <!-- 7. Tres discos favoritos -->
+                <div class="details-block">
+                    <h3>Sinfonías Abisales (Discos)</h3>
+                    <ul>
+                        <li>[Disco 1]</li>
+                        <li>[Disco 2]</li>
+                        <li>[Disco 3]</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 8. Interacción Dinámica Propia (JavaScript) -->
+            <div class="profile-interactive-box">
+                <h3>Mecanismo del Necronomicón</h3>
+                <p>Presioná el sello para revelar el conocimiento oculto de este investigador.</p>
+                <button id="btn-reveal-sergio">Revelar Secreto</button>
+                <p id="secret-text-sergio" class="hidden-lore"></p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Desarrollo de Sistemas Web | Grupo 5B</p>
+    </footer>
+
+    <!-- Script específico del perfil de Sergio -->
+    <script src="js/integrante2.js"></script>
+</body>
+</html>
