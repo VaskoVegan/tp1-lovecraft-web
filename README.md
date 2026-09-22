@@ -33,7 +33,7 @@ La navegación principal permite volver a Inicio, ir a los perfiles desde el lis
 - CSS propio, variables de diseño, animaciones y media queries.
 - JavaScript sin dependencias para las interacciones y el menú móvil.
 - Google Fonts: [Marcellus](https://fonts.google.com/specimen/Marcellus), [IM Fell English](https://fonts.google.com/specimen/IM+Fell+English) y [DM Sans](https://fonts.google.com/specimen/DM+Sans).
-- Ilustración vectorial original (`img/umbral.svg`), avatares tipográficos y motivos gráficos dibujados con CSS; no se usan fotografías personales ni imágenes de terceros.
+- Ilustraciones vectoriales originales (`img/umbral.svg`, `img/lovecraft.svg`, `img/cthulhu.svg`, `img/dagon.svg`, `img/investigator.svg`), miniaturas CSS para los enlaces de cine y música, avatares tipográficos y motivos gráficos dibujados con CSS; no se usan fotografías personales ni imágenes de terceros.
 
 ## Guía de estilos
 
@@ -43,11 +43,14 @@ La navegación principal permite volver a Inicio, ir a los perfiles desde el lis
 | Panel | `#151C18` |
 | Texto principal | `#E8E2D1` |
 | Texto secundario | `#B4B7A5` |
-| Cobre | `#C18959` |
-| Cobre claro | `#D6A273` |
+| Latón de archivo | `#C18959` |
+| Violeta | `#A48AD4` |
+| Violeta profundo | `#8C70C2` |
+| Lila claro | `#C4AFEA` |
+| Verde espectral | `#A7C879` |
 | Líneas | `rgba(210, 190, 151, 0.17)` |
 
-Los títulos usan Marcellus; citas y acentos literarios usan IM Fell English; el texto de lectura y los controles usan DM Sans. Los emblemas, avatares tipográficos, el ojo de portada y las estrellas se dibujan con CSS, sin icon font externo.
+Los títulos usan Marcellus; citas y acentos literarios usan IM Fell English; el texto de lectura y los controles usan DM Sans. La identidad combina fondos de tinta, acentos violetas y verdes, y toques de latón. La portada y el bestiario usan SVG originales; los avatares y las miniaturas de favoritos se dibujan con CSS.
 
 ## Estructura
 
@@ -60,7 +63,11 @@ tp1-lovecraft-web/
 ├── integrante4.html          # pendiente de incorporación
 ├── bitacora.html
 ├── img/
-│   └── umbral.svg
+│   ├── umbral.svg
+│   ├── lovecraft.svg
+│   ├── cthulhu.svg
+│   ├── dagon.svg
+│   └── investigator.svg
 ├── README.md
 ├── css/
 │   └── style.css
@@ -79,11 +86,17 @@ No se requiere instalar paquetes. Para una vista local, abrir `index.html` en un
 - **Portada — `js/index.js`:** el botón “Investigar la señal” reduce el medidor en pasos, actualiza su mensaje y su valor accesible; al llegar a cero, registra el estado final. El mismo archivo abre y cierra el menú en pantallas pequeñas.
 - **Expediente 01 — `js/integrante1.js`:** “Marcar el pulso” activa una animación y muestra notas secuenciales inspiradas en la organización y el ritmo de trabajo de Rubén.
 - **Expediente 02 — `js/integrante2.js`:** “Consultar el archivo” revela observaciones secuenciales y anima el mapa estelar.
+- **Portada — archivo ilustrado:** galería visual original con retrato literario, Cthulhu, Dagon y una investigadora ficticia; tentáculos con animación CSS y opción de movimiento reducido.
+- **Perfiles — favoritos:** las miniaturas de cine abren búsquedas en IMDb y las de bandas, búsquedas en Spotify.
 - **Expedientes 03 y 04:** interacciones pendientes junto con la incorporación de cada perfil.
 
 ## Diseño adaptable
 
 La hoja compartida incluye ajustes para escritorio, tabletas y móviles. Los breakpoints explícitos corresponden a `1200px`, `900px` y `400px`. La revisión visual en esos anchos debe registrarse antes de la entrega final.
+
+## Enlaces a favoritos
+
+Los títulos de cine abren búsquedas en IMDb y las bandas abren búsquedas en Spotify. Cada enlace incluye una miniatura ilustrada propia que funciona también como área clickeable; no se reutiliza arte de pósteres ni portadas comerciales.
 
 ## Capturas
 
