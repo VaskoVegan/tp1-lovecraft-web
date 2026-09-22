@@ -1,0 +1,264 @@
+/* Importar tipografías de Google Fonts: IM Fell English (antigua/misteriosa) y Roboto (legible) */
+@import url('https://googleapis.com');
+
+/* Variables de color de la temática Arkham / Lovecraft */
+:root {
+    --bg-dark: #070b0e;        /* Negro abisal */
+    --bg-card: #111a22;        /* Verde musgo muy oscuro / grisáceo */
+    --primary-neon: #39ff14;   /* Verde Cthulhu / Neón espectral */
+    --text-light: #d1dadb;     /* Gris claro pergamino */
+    --text-muted: #788a8f;     /* Gris apagado neblina */
+    --font-ancient: 'IM Fell English', serif;
+    --font-clean: 'Roboto', sans-serif;
+}
+
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: var(--font-clean);
+    line-height: 1.6;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: rgba(7, 11, 14, 0.9);
+    border-bottom: 2px solid var(--primary-neon);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-logo {
+    font-family: var(--font-ancient);
+    font-size: 1.8rem;
+    color: var(--primary-neon);
+    text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--primary-neon);
+}
+
+/* Contenedor Base */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* === BREAKPOINTS OBLIGATORIOS === */
+
+/* Tablets y pantallas medianas (Hasta 1200px) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+/* Tablets chicas y pantallas de transición (Hasta 900px) */
+@media (max-width: 900px) {
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+/* Celulares (Hasta 400px) */
+@media (max-width: 400px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .nav-links {
+        width: 100%;
+        justify-content: space-around;
+    }
+    body {
+        font-size: 14px;
+    }
+}
+
+/* --- ESTILOS DE LA PORTADA (INDEX) --- */
+
+/* Sección Hero / Presentación */
+.hero-section {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.ancient-title {
+    font-family: var(--font-ancient);
+    font-size: 3rem;
+    color: var(--primary-neon);
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(57, 255, 20, 0.4);
+}
+
+.team-purpose {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    color: var(--text-light);
+}
+
+/* Caja Interactiva: Medidor de Cordura */
+.interactive-box {
+    background-color: var(--bg-card);
+    border: 1px solid rgba(57, 255, 20, 0.2);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.interactive-box h3 {
+    font-family: var(--font-ancient);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.sanity-bar-container {
+    width: 100%;
+    background-color: #0d1318;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 1px solid rgba(209, 218, 219, 0.1);
+}
+
+#sanity-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #105214, var(--primary-neon));
+    box-shadow: 0 0 10px var(--primary-neon);
+    transition: width 0.5s ease;
+}
+
+#sanity-text {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+#btn-investigate {
+    background-color: transparent;
+    color: var(--primary-neon);
+    border: 2px solid var(--primary-neon);
+    padding: 10px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+#btn-investigate:hover {
+    background-color: var(--primary-neon);
+    color: var(--bg-dark);
+    box-shadow: 0 0 15px var(--primary-neon);
+}
+
+#btn-investigate:disabled {
+    border-color: #ff3333;
+    color: #ff3333;
+    cursor: not-allowed;
+    box-shadow: none;
+    background: transparent;
+}
+
+/* Rejilla de Tarjetas de Integrantes */
+.section-title {
+    font-family: var(--font-ancient);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(120, 138, 143, 0.3);
+    padding-bottom: 10px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.member-card {
+    background-color: var(--bg-card);
+    border: 1px solid rgba(120, 138, 143, 0.2);
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-neon);
+}
+
+.card-avatar {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.member-card h3 {
+    font-family: var(--font-ancient);
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.member-role {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.btn-profile {
+    display: inline-block;
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--text-muted);
+    padding-bottom: 2px;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.btn-profile:hover {
+    color: var(--primary-neon);
+    border-color: var(--primary-neon);
+}
+
+/* Tarjetas atenuadas para los chicos ausentes */
+.placeholder-card {
+    opacity: 0.6;
+    border-style: dashed;
+}
