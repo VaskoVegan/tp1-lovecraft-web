@@ -3,83 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo 5B | Mitos de Front-End</title>
+    <title>Grupo 5B | Expedición Front-End</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Menú de Navegación Obligatorio -->
     <nav class="navbar">
-        <div class="nav-logo">Culto_G5B</div>
+        <div class="nav-logo">G5B<span>_ARCHIVE</span></div>
         <ul class="nav-links">
             <li><a href="index.html" class="active">Inicio</a></li>
             <li><a href="bitacora.html">Bitácora</a></li>
         </ul>
     </nav>
 
-    <!-- Sección Principal / Propósito -->
-    <header class="container hero-section">
-        <h1 class="ancient-title">Investigadores del Front-End</h1>
+    <header class="hero-section">
+        <div class="hero-tag">Investigación de Sistemas Web 2026</div>
+        <h1 class="ancient-title">Descifrando las leyes del <em>Front-End</em></h1>
         <p class="team-purpose">
-            Bienvenidos al archivo del **Grupo 5B**. Nuestro propósito en esta expedición web es desenterrar los secretos antiguos de HTML, domar las caóticas fuerzas del CSS adaptativo y desatar el poder oculto de JavaScript. Nos adentramos en el código sin temor a perder la cordura.
+            Bienvenidos al archivo del **Grupo 5B**. Unimos lógica, diseño adaptable e interactividad dinámica para desenterrar soluciones web limpias. Nos adentramos en el código sin temor a perder la cordura arquitectónica.
         </p>
-        
-        <!-- Interacción JS de la Portada: El Medidor de Cordura -->
+    </header>
+
+    <div class="lovecraft-quote">
+        "No está muerto lo que puede yacer eternamente, y con los eones extraños incluso el código puede mutar."
+    </div>
+
+    <main class="container">
         <div class="interactive-box">
-            <h3>Medidor de Cordura del Equipo</h3>
+            <h3 style="font-family: var(--font-display); letter-spacing: 2px;">ESTADO DE CORDURA COGNITIVA</h3>
             <div class="sanity-bar-container">
                 <div id="sanity-bar" style="width: 100%;"></div>
             </div>
-            <p id="sanity-text">Cordura actual: 100% (Estable)</p>
-            <button id="btn-investigate">Investigar el Código Antiguo</button>
+            <p id="sanity-text" style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Estable — Investigadores operando al 100%</p>
+            <button id="btn-investigate">Investigar Código Antiguo</button>
         </div>
-    </header>
 
-    <!-- Rejilla de Integrantes -->
-    <main class="container">
-        <h2 class="section-title">Los Miembros del Culto</h2>
         <div class="team-grid">
-            
-            <!-- Integrante 1: Vasko -->
+            <!-- 01 Vasko -->
             <div class="member-card">
+                <div class="card-number">01</div>
                 <div class="card-avatar">🐙</div>
                 <h3>Vasko</h3>
-                <p class="member-role">Líder de Expedición (Organización)</p>
-                <a href="integrante1.html" class="btn-profile">Ver Expediente</a>
+                <div class="member-role">Organización & Testing</div>
+                <a href="integrante1.html" class="btn-profile">Examinar Expediente →</a>
             </div>
 
-            <!-- Integrante 2: Sergio -->
+            <!-- 02 Sergio -->
             <div class="member-card">
+                <div class="card-number">02</div>
                 <div class="card-avatar">👁️</div>
                 <h3>Sergio</h3>
-                <p class="member-role">Arquitecto Visual (Diseño y CSS)</p>
-                <a href="integrante2.html" class="btn-profile">Ver Expediente</a>
+                <div class="member-role">Diseño & Estructura CSS</div>
+                <a href="integrante2.html" class="btn-profile">Examinar Expediente →</a>
             </div>
 
-            <!-- Integrante 3: Álvaro -->
+            <!-- 03 Álvaro -->
             <div class="member-card placeholder-card">
+                <div class="card-number">03</div>
                 <div class="card-avatar">⏳</div>
                 <h3>Álvaro</h3>
-                <p class="member-role">Investigador (Próximamente)</p>
-                <a href="integrante3.html" class="btn-profile">Ver Expediente</a>
+                <div class="member-role">Desarrollo (Próximamente)</div>
+                <a href="integrante3.html" class="btn-profile">Bloqueado</a>
             </div>
 
-            <!-- Integrante 4: Juance -->
+            <!-- 04 Juance -->
             <div class="member-card placeholder-card">
+                <div class="card-number">04</div>
                 <div class="card-avatar">⏳</div>
                 <h3>Juance</h3>
-                <p class="member-role">Escriba (Próximamente)</p>
-                <a href="integrante4.html" class="btn-profile">Ver Expediente</a>
+                <div class="member-role">Documentación (Próximamente)</div>
+                <a href="integrante4.html" class="btn-profile">Bloqueado</a>
             </div>
-
         </div>
     </main>
 
     <footer>
-        <p>© 2026 - Desarrollo de Sistemas Web | Grupo 5B</p>
+        <p>AACMP / G5B · Desarrollo de Sistemas Web · 2026</p>
     </footer>
 
-    <!-- Script de la portada -->
     <script src="js/index.js"></script>
 </body>
 </html>

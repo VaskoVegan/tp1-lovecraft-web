@@ -1,18 +1,19 @@
-/* Importar tipografías de Google Fonts: IM Fell English (antigua/misteriosa) y Roboto (legible) */
 @import url('https://googleapis.com');
 
-/* Variables de color de la temática Arkham / Lovecraft */
 :root {
-    --bg-dark: #070b0e;        /* Negro abisal */
-    --bg-card: #111a22;        /* Verde musgo muy oscuro / grisáceo */
-    --primary-neon: #39ff14;   /* Verde Cthulhu / Neón espectral */
-    --text-light: #d1dadb;     /* Gris claro pergamino */
-    --text-muted: #788a8f;     /* Gris apagado neblina */
+    --bg-dark: #06040a;         /* Fondo abisal profundo */
+    --bg-card: #110c1c;         /* Caja gótica lila oscura */
+    --bg-card-hover: #19122b;   /* Variación de lila para enfoque */
+    --primary-neon: #39ff14;    /* Verde espectral Cthulhu */
+    --accent-purple: #9d4edd;   /* Lila cósmico de Arkham */
+    --text-light: #f0eaf7;      /* Texto pergamino claro */
+    --text-muted: #8d7ca2;      /* Neblina lila apagada */
     --font-ancient: 'IM Fell English', serif;
-    --font-clean: 'Roboto', sans-serif;
+    --font-display: 'Cinzel', serif; /* Para subtítulos y números de orden */
+    --font-clean: 'Plus Jakarta Sans', sans-serif; /* Tipografía moderna ultra-legible */
 }
 
-/* Estilos Generales */
+/* Base del Documento con Niebla Cósmica */
 * {
     margin: 0;
     padding: 0;
@@ -21,27 +22,38 @@
 
 body {
     background-color: var(--bg-dark);
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(157, 78, 221, 0.12) 0px, transparent 40%),
+        radial-gradient(at 100% 100%, rgba(57, 255, 20, 0.06) 0px, transparent 40%);
     color: var(--text-light);
     font-family: var(--font-clean);
+    overflow-x: hidden;
     line-height: 1.6;
 }
 
-/* Barra de navegación */
+/* Navbar sofisticada y translúcida */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
-    background-color: rgba(7, 11, 14, 0.9);
-    border-bottom: 2px solid var(--primary-neon);
+    padding: 25px 8%;
+    background: rgba(6, 4, 10, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(157, 78, 221, 0.2);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .nav-logo {
-    font-family: var(--font-ancient);
-    font-size: 1.8rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: var(--text-light);
+}
+
+.nav-logo span {
     color: var(--primary-neon);
     text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
 }
@@ -49,326 +61,294 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 35px;
 }
 
 .nav-links a {
-    color: var(--text-light);
+    color: var(--text-muted);
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
 }
 
 .nav-links a:hover, .nav-links a.active {
     color: var(--primary-neon);
+    text-shadow: 0 0 8px rgba(57, 255, 20, 0.4);
 }
 
-/* Contenedor Base */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-/* === BREAKPOINTS OBLIGATORIOS === */
-
-/* Tablets y pantallas medianas (Hasta 1200px) */
-@media (max-width: 1200px) {
-    .container {
-        max-width: 900px;
-    }
-}
-
-/* Tablets chicas y pantallas de transición (Hasta 900px) */
-@media (max-width: 900px) {
-    .container {
-        max-width: 100%;
-        padding: 20px;
-    }
-    .nav-links {
-        gap: 15px;
-    }
-}
-
-/* Celulares (Hasta 400px) */
-@media (max-width: 400px) {
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-    .nav-links {
-        width: 100%;
-        justify-content: space-around;
-    }
-    body {
-        font-size: 14px;
-    }
-}
-
-/* --- ESTILOS DE LA PORTADA (INDEX) --- */
-
-/* Sección Hero / Presentación */
+/* Encabezado Héroe Estilo Catálogo de Expedición */
 .hero-section {
+    padding: 100px 20px 60px 20px;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-tag {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    color: var(--accent-purple);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
 .ancient-title {
     font-family: var(--font-ancient);
-    font-size: 3rem;
-    color: var(--primary-neon);
-    margin-bottom: 20px;
-    text-shadow: 0 0 15px rgba(57, 255, 20, 0.4);
-}
-
-.team-purpose {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto 40px auto;
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
     color: var(--text-light);
 }
 
-/* Caja Interactiva: Medidor de Cordura */
-.interactive-box {
-    background-color: var(--bg-card);
-    border: 1px solid rgba(57, 255, 20, 0.2);
-    padding: 30px;
-    border-radius: 8px;
-    max-width: 500px;
-    margin: 0 auto;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-.interactive-box h3 {
+.ancient-title em {
     font-family: var(--font-ancient);
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-.sanity-bar-container {
-    width: 100%;
-    background-color: #0d1318;
-    height: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 10px;
-    border: 1px solid rgba(209, 218, 219, 0.1);
-}
-
-#sanity-bar {
-    height: 100%;
-    background: linear-gradient(90deg, #105214, var(--primary-neon));
-    box-shadow: 0 0 10px var(--primary-neon);
-    transition: width 0.5s ease;
-}
-
-#sanity-text {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    margin-bottom: 20px;
-}
-
-#btn-investigate {
-    background-color: transparent;
+    font-style: italic;
     color: var(--primary-neon);
-    border: 2px solid var(--primary-neon);
-    padding: 10px 25px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: all 0.3s ease;
 }
 
-#btn-investigate:hover {
-    background-color: var(--primary-neon);
-    color: var(--bg-dark);
-    box-shadow: 0 0 15px var(--primary-neon);
+.team-purpose {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    font-weight: 300;
+    line-height: 1.8;
 }
 
-#btn-investigate:disabled {
-    border-color: #ff3333;
-    color: #ff3333;
-    cursor: not-allowed;
-    box-shadow: none;
-    background: transparent;
-}
-
-/* Rejilla de Tarjetas de Integrantes */
-.section-title {
+/* Citas literarias intercaladas */
+.lovecraft-quote {
     font-family: var(--font-ancient);
-    font-size: 2rem;
+    font-style: italic;
+    color: var(--accent-purple);
     text-align: center;
-    margin-bottom: 40px;
-    border-bottom: 1px solid rgba(120, 138, 143, 0.3);
-    padding-bottom: 10px;
+    max-width: 650px;
+    margin: 40px auto;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+/* Grilla de Integrantes Asimétrica y Avanzada */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
 }
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+    margin-top: 40px;
 }
 
+/* Tarjetas de Integrantes Estilo Archivo Secreto */
 .member-card {
     background-color: var(--bg-card);
-    border: 1px solid rgba(120, 138, 143, 0.2);
+    border: 1px solid rgba(157, 78, 221, 0.15);
     border-radius: 8px;
-    padding: 30px 20px;
-    text-align: center;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    padding: 40px 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.member-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 4px;
+    background: var(--accent-purple);
+    transition: all 0.3s ease;
 }
 
 .member-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--primary-neon);
+    transform: translateY(-10px);
+    border-color: rgba(57, 255, 20, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.member-card:hover::before {
+    background: var(--primary-neon);
+    box-shadow: 0 0 10px var(--primary-neon);
+}
+
+.card-number {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(157, 78, 221, 0.1);
+    position: absolute;
+    top: 20px;
+    right: 30px;
 }
 
 .card-avatar {
-    font-size: 3rem;
-    margin-bottom: 15px;
+    font-size: 3.5rem;
+    margin-bottom: 25px;
 }
 
 .member-card h3 {
-    font-family: var(--font-ancient);
-    font-size: 1.4rem;
-    margin-bottom: 5px;
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
 }
 
 .member-role {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    margin-bottom: 20px;
+    font-family: var(--font-ancient);
+    font-style: italic;
+    color: var(--primary-neon);
+    font-size: 1rem;
+    margin-bottom: 25px;
 }
 
 .btn-profile {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     color: var(--text-light);
     text-decoration: none;
-    font-size: 0.9rem;
-    border-bottom: 1px solid var(--text-muted);
-    padding-bottom: 2px;
-    transition: color 0.3s, border-color 0.3s;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--accent-purple);
+    padding-bottom: 4px;
+    transition: all 0.3s ease;
 }
 
 .btn-profile:hover {
     color: var(--primary-neon);
-    border-color: var(--primary-neon);
+    border-bottom-color: var(--primary-neon);
+    padding-left: 5px;
 }
 
-/* Tarjetas atenuadas para los chicos ausentes */
-.placeholder-card {
-    opacity: 0.6;
-    border-style: dashed;
-}
-
-/* --- ESTILOS DE LOS PERFILES INDIVIDUALES --- */
-.profile-container {
-    margin-top: 20px;
-}
-
-.back-nav {
-    margin-bottom: 20px;
-}
-
-.btn-back {
-    color: var(--text-muted);
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.3s;
-}
-
-.btn-back:hover {
-    color: var(--primary-neon);
-}
-
-.profile-card {
-    background-color: var(--bg-card);
-    border: 1px solid rgba(120, 138, 143, 0.3);
-    border-radius: 12px;
-    padding: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
-}
-
-.profile-avatar {
-    font-size: 4rem;
-    text-align: center;
-    margin-bottom: 15px;
-    transition: all 0.3s ease;
-}
-
-.profile-meta {
-    text-align: center;
-    color: var(--text-muted);
-    margin-bottom: 40px;
-    font-size: 1rem;
-}
-
+/* Tarjetas de perfiles individuales estructuradas */
 .profile-details-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-bottom: 40px;
+    margin-top: 50px;
 }
 
 .details-block {
-    background-color: rgba(7, 11, 14, 0.5);
-    border-left: 3px solid var(--primary-neon);
-    padding: 20px;
-    border-radius: 0 8px 8px 0;
+    background: rgba(17, 12, 28, 0.4);
+    border: 1px solid rgba(157, 78, 221, 0.1);
+    padding: 30px;
+    border-radius: 6px;
 }
 
 .details-block h3 {
-    font-family: var(--font-ancient);
-    color: var(--primary-neon);
-    margin-bottom: 15px;
-    font-size: 1.2rem;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: var(--accent-purple);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(157, 78, 221, 0.1);
+    padding-bottom: 10px;
 }
 
-.details-block ul, .details-block ol {
+.skills-list {
+    list-style: none;
+}
+
+.skills-list li {
+    position: relative;
     padding-left: 20px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
 }
 
-.details-block li {
-    margin-bottom: 8px;
-}
-
-.profile-interactive-box {
-    text-align: center;
-    border-top: 1px solid rgba(120, 138, 143, 0.2);
-    padding-top: 30px;
-}
-
-.profile-interactive-box h3 {
-    font-family: var(--font-ancient);
-    margin-bottom: 10px;
-}
-
-.profile-interactive-box p {
-    color: var(--text-muted);
-    margin-bottom: 15px;
-}
-
-#btn-reveal-sergio {
-    background-color: var(--primary-neon);
-    color: var(--bg-dark);
-    border: none;
-    padding: 12px 30px;
+.skills-list li::before {
+    content: "⁄";
+    position: absolute;
+    left: 0;
+    color: var(--primary-neon);
     font-weight: bold;
+}
+
+/* Listas con enlaces interactivos en perfiles */
+.lore-link {
+    color: var(--text-light);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.lore-link:hover {
+    color: var(--primary-neon);
+    transform: translateX(4px);
+}
+
+/* Sección Interactiva del DOM */
+.interactive-box {
+    margin-top: 60px;
+    background: linear-gradient(135deg, var(--bg-card) 0%, #0d0816 100%);
+    border: 1px solid rgba(157, 78, 221, 0.2);
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.sanity-bar-container {
+    width: 100%;
+    height: 8px;
+    background: #06040a;
     border-radius: 4px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+#sanity-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-purple), var(--primary-neon));
+    transition: width 0.4s ease;
+}
+
+/* Estilos de Botones de Alta Gama */
+button {
+    background: transparent;
+    color: var(--primary-neon);
+    border: 1px solid var(--primary-neon);
+    padding: 14px 32px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     cursor: pointer;
+    border-radius: 4px;
     transition: all 0.3s ease;
 }
 
-#btn-reveal-sergio:hover {
-    box-shadow: 0 0 20px var(--primary-neon);
-    transform: translateY(-2px);
+button:hover {
+    background: var(--primary-neon);
+    color: var(--bg-dark);
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.4);
 }
 
-.hidden-lore {
-    margin-top: 20px;
-    font-style: italic;
-    min-height: 24px;
-    transition: all 0.3s ease;
+/* Placeholders Estilizados */
+.placeholder-card {
+    opacity: 0.4;
+    border-style: dashed;
+}
+
+/* Footer Limpio */
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(157, 78, 221, 0.1);
+    margin-top: 80px;
+}
+
+/* Breakpoints Adaptativos */
+@media (max-width: 1200px) { .container { max-width: 900px; } .ancient-title { font-size: 3rem; } }
+@media (max-width: 900px) { .container { max-width: 100%; } }
+@media (max-width: 400px) {
+    .navbar { flex-direction: column; gap: 15px; }
+    .nav-links { gap: 20px; }
 }

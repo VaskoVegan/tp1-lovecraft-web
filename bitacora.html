@@ -3,53 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitácora de Expedición | Grupo 5B</title>
+    <title>Bitácora de Expedición | G5B</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Menú de Navegación -->
     <nav class="navbar">
-        <div class="nav-logo">Culto_G5B</div>
+        <div class="nav-logo">G5B<span>_ARCHIVE</span></div>
         <ul class="nav-links">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="bitacora.html" class="active">Bitácora</a></li>
         </ul>
     </nav>
 
-    <!-- Contenedor Principal -->
-    <main class="container">
-        <h1 class="ancient-title" style="text-align: center;">Bitácora de Desarrollo</h1>
-        <p style="text-align: center; color: var(--text-muted); margin-bottom: 50px;">
-            Registro cronológico de los desafíos, decisiones y la evolución del Grupo 5B.
+    <header class="hero-section">
+        <div class="hero-tag">Registro Cronológico del Culto</div>
+        <h1 class="ancient-title">Diario de <em>Expedición</em></h1>
+        <p class="team-purpose">
+            Un registro prolijo de los pergaminos de código desenterrados, los desafíos que pusieron a prueba nuestra cordura y la evolución técnica del Grupo 5B.
         </p>
+    </header>
 
-        <div style="display: flex; flex-direction: column; gap: 30px;">
+    <main class="container">
+        <div style="display: flex; flex-direction: column; gap: 40px; max-width: 800px; margin: 0 auto;">
             
             <!-- Etapa 1 -->
-            <section class="profile-card">
-                <h2 style="font-family: var(--font-ancient); color: var(--primary-neon); margin-bottom: 15px;">Etapa 1: Organización</h2>
-                <p><strong>Decisiones:</strong> Definimos los roles iniciales y seleccionamos la temática de H.P. Lovecraft (Terror Cósmico) para la identidad visual.</p>
-                <p style="margin-top: 10px;"><strong>Dificultades:</strong> Ausencia temporal de dos integrantes. Vasko y Sergio tomamos el liderazgo operativo para estructurar el proyecto completo y no retrasar la entrega.</p>
+            <section class="member-card" style="padding: 40px;">
+                <div class="card-number">01</div>
+                <div class="card-avatar">📜</div>
+                <h2 style="font-family: var(--font-display); font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 15px; color: var(--accent-purple);">ETAPA 1: CONGESTIÓN Y ROLES</h2>
+                <p style="margin-bottom: 10px;"><strong>Decisiones de Proyecto:</strong> Leímos la consigna en conjunto y distribuimos los roles oficiales de la cátedra. Adoptamos la temática de H.P. Lovecraft para darle una identidad visual disruptiva al sitio.</p>
+                <p><strong>Dificultades Afrontadas:</strong> Ausencia temporal de dos investigadores (Álvaro y Juance). Vasko y Sergio tomamos la posta operativa para crear la estructura base modular, garantizando que el proyecto avance sin retrasos.</p>
             </section>
 
             <!-- Etapa 2 -->
-            <section class="profile-card">
-                <h2 style="font-family: var(--font-ancient); color: var(--primary-neon); margin-bottom: 15px;">Etapa 2: Diseño e Identidad Visual</h2>
-                <p><strong>Decisiones:</strong> Sergio definiw una paleta de colores oscuros ("Negro abisal" y "Verde Cthulhu") usando variables CSS para mantener la consistencia en todas las páginas.</p>
+            <section class="member-card" style="padding: 40px;">
+                <div class="card-number">02</div>
+                <div class="card-avatar">🎨</div>
+                <h2 style="font-family: var(--font-display); font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 15px; color: var(--accent-purple);">ETAPA 2: ARQUITECTURA VISUAL</h2>
+                <p><strong>Decisiones de Diseño:</strong> Sergio diseñó la guía de estilos inmersiva. Combinamos las fuentes tipográficas 'Cinzel' y 'IM Fell English' para lograr un aspecto de manuscrito antiguo, regulado bajo un sistema de variables de CSS adaptativo para evitar desbordes.</p>
             </section>
 
             <!-- Etapa 3 -->
-            <section class="profile-card">
-                <h2 style="font-family: var(--font-ancient); color: var(--primary-neon); margin-bottom: 15px;">Etapa 3: Desarrollo (HTML, CSS y JS)</h2>
-                <p><strong>Decisiones:</strong> Implementamos interacciones independientes con JavaScript (Medidor de Cordura en la Home, Mecanismo del Necronomicón en el perfil de Sergio y el Portal Dimensional en el de Vasko).</p>
+            <section class="member-card" style="padding: 40px;">
+                <div class="card-number">03</div>
+                <div class="card-avatar">⚡</div>
+                <h2 style="font-family: var(--font-display); font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 15px; color: var(--accent-purple);">ETAPA 3: DESATANDO EL DOM</h2>
+                <p><strong>Decisiones de Código:</strong> Estructuramos de forma limpia los perfiles enlazando discos y películas con hipervínculos externos funcionales hacia Spotify e IMDb. Programamos interacciones independientes en JavaScript para manipular el DOM de manera creativa en cada expediente.</p>
+            </section>
+
+            <!-- Etapa 4 -->
+            <section class="member-card" style="padding: 40px;">
+                <div class="card-number">04</div>
+                <div class="card-avatar">📱</div>
+                <h2 style="font-family: var(--font-display); font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 15px; color: var(--accent-purple);">ETAPA 4: CONTROL RESPONSIVE</h2>
+                <p><strong>Testing y Calidad:</strong> Validamos de forma estricta los tres breakpoints obligatorios (400px, 900px y 1200px) mediante las herramientas de desarrollo del navegador, asegurando que las grillas colapsen correctamente en dispositivos móviles.</p>
             </section>
 
         </div>
     </main>
 
     <footer>
-        <p>© 2026 - Desarrollo de Sistemas Web | Grupo 5B</p>
+        <p>AACMP / G5B · Desarrollo de Sistemas Web · 2026</p>
     </footer>
 </body>
 </html>
