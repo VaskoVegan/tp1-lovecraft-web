@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">El umbral</title>
+  <desc id="desc">Un ojo antiguo aparece entre anillos y corrientes cósmicas.</desc>
+  <defs>
+    <radialGradient id="haze"><stop stop-color="#68775d" stop-opacity=".31"/><stop offset=".58" stop-color="#25352a" stop-opacity=".2"/><stop offset="1" stop-color="#101512" stop-opacity="0"/></radialGradient>
+    <radialGradient id="iris" cx="48%" cy="42%" r="58%"><stop stop-color="#d6a273"/><stop offset=".12" stop-color="#87613f"/><stop offset=".23" stop-color="#22271e"/><stop offset=".54" stop-color="#141a15"/><stop offset=".73" stop-color="#6d5942"/><stop offset=".78" stop-color="#1a211a"/><stop offset="1" stop-color="#101512"/></radialGradient>
+    <linearGradient id="lid" x1="177" x2="628" y1="291" y2="497" gradientUnits="userSpaceOnUse"><stop stop-color="#d6a273" stop-opacity=".2"/><stop offset=".5" stop-color="#d6a273"/><stop offset="1" stop-color="#d6a273" stop-opacity=".2"/></linearGradient>
+    <filter id="glow" x="210" y="230" width="380" height="340" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="25"/></filter>
+  </defs>
+  <circle cx="400" cy="400" r="355" fill="url(#haze)"/>
+  <g stroke="#c18959" stroke-opacity=".24">
+    <ellipse cx="400" cy="400" rx="341" ry="177" transform="rotate(-27 400 400)"/>
+    <ellipse cx="400" cy="400" rx="254" ry="348" transform="rotate(39 400 400)"/>
+    <ellipse cx="400" cy="400" rx="315" ry="315" stroke-dasharray="2 17"/>
+    <circle cx="400" cy="400" r="275" stroke-opacity=".13"/>
+    <circle cx="400" cy="400" r="222" stroke-opacity=".1"/>
+  </g>
+  <path d="M226 402c45-72 103-111 174-115 74-4 133 33 176 113-42 78-101 117-176 115-71-2-129-40-174-113Z" fill="#101512" stroke="url(#lid)" stroke-width="2"/>
+  <ellipse cx="400" cy="400" rx="94" ry="92" fill="#c18959" fill-opacity=".12" filter="url(#glow)"/>
+  <circle cx="400" cy="400" r="69" fill="url(#iris)" stroke="#d6a273" stroke-opacity=".72" stroke-width="1.5"/>
+  <circle cx="400" cy="400" r="32" fill="#0c100d" stroke="#c18959" stroke-opacity=".6"/>
+  <ellipse cx="400" cy="400" rx="12" ry="26" fill="#d6a273" fill-opacity=".78"/>
+  <circle cx="424" cy="376" r="7" fill="#e8e2d1" fill-opacity=".66"/>
+  <g fill="#d6a273"><circle cx="147" cy="244" r="3"/><circle cx="646" cy="574" r="3"/><circle cx="621" cy="196" r="2"/><path d="M196 584h12v1h-12zM594 283h11v1h-11z"/></g>
+</svg>

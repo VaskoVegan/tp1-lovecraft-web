@@ -1,70 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitácora de Expedición | G5B</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101512"><meta name="description" content="Bitácora de decisiones y avances del proyecto Umbral 5B.">
+  <title>Bitácora — Umbral 5B</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=Marcellus&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <nav class="navbar">
-        <div class="nav-logo">G5B<span>_ARCHIVE</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="bitacora.html" class="active">Bitácora</a></li>
-        </ul>
-    </nav>
-
-    <header class="hero-section">
-        <div class="hero-tag">Registro Cronológico del Culto</div>
-        <h1 class="ancient-title">Diario de <em>Expedición</em></h1>
-        <p class="team-purpose">
-            Un registro prolijo de los pergaminos de código desenterrados, los desafíos que pusieron a prueba nuestra cordura y la evolución técnica del Grupo 5B.
-        </p>
-    </header>
-
-    <main class="container">
-        <div style="display: flex; flex-direction: column; gap: 40px; max-width: 800px; margin: 0 auto;">
-            
-            <!-- Etapa 1 -->
-            <section class="member-card" style="padding: 40px;">
-                <div class="card-number">01</div>
-                <div class="card-avatar">📜</div>
-                <h2 style="font-family: var(--font-display); font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 15px; color: var(--accent-purple);">ETAPA 1: CONGESTIÓN Y ROLES</h2>
-                <p style="margin-bottom: 10px;"><strong>Decisiones de Proyecto:</strong> Leímos la consigna en conjunto y distribuimos los roles oficiales de la cátedra. Adoptamos la temática de H.P. Lovecraft para darle una identidad visual disruptiva al sitio.</p>
-                <p><strong>Dificultades Afrontadas:</strong> Ausencia temporal de dos investigadores (Álvaro y Juance). Vasko y Sergio tomamos la posta operativa para crear la estructura base modular, garantizando que el proyecto avance sin retrasos.</p>
-            </section>
-
-            <!-- Etapa 2 -->
-            <section class="member-card" style="padding: 40px;">
-                <div class="card-number">02</div>
-                <div class="card-avatar">🎨</div>
-                <h2 style="font-family: var(--font-display); font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 15px; color: var(--accent-purple);">ETAPA 2: ARQUITECTURA VISUAL</h2>
-                <p><strong>Decisiones de Diseño:</strong> Sergio diseñó la guía de estilos inmersiva. Combinamos las fuentes tipográficas 'Cinzel' y 'IM Fell English' para lograr un aspecto de manuscrito antiguo, regulado bajo un sistema de variables de CSS adaptativo para evitar desbordes.</p>
-            </section>
-
-            <!-- Etapa 3 -->
-            <section class="member-card" style="padding: 40px;">
-                <div class="card-number">03</div>
-                <div class="card-avatar">⚡</div>
-                <h2 style="font-family: var(--font-display); font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 15px; color: var(--accent-purple);">ETAPA 3: DESATANDO EL DOM</h2>
-                <p><strong>Decisiones de Código:</strong> Estructuramos de forma limpia los perfiles enlazando discos y películas con hipervínculos externos funcionales hacia Spotify e IMDb. Programamos interacciones independientes en JavaScript para manipular el DOM de manera creativa en cada expediente.</p>
-            </section>
-
-            <!-- Etapa 4 -->
-            <section class="member-card" style="padding: 40px;">
-                <div class="card-number">04</div>
-                <div class="card-avatar">📱</div>
-                <h2 style="font-family: var(--font-display); font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 15px; color: var(--accent-purple);">ETAPA 4: CONTROL RESPONSIVE</h2>
-                <p><strong>Testing y Calidad:</strong> Validamos de forma estricta los tres breakpoints obligatorios (400px, 900px y 1200px) mediante las herramientas de desarrollo del navegador, asegurando que las grillas colapsen correctamente en dispositivos móviles.</p>
-            </section>
-
-        </div>
-    </main>
-
-    <footer>
-        <p>AACMP / G5B · Desarrollo de Sistemas Web · 2026</p>
-    </footer>
-</body>
-</html>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <nav class="navbar" aria-label="Navegación principal"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">◉</span> UMBRAL <span class="brand-divider">/</span> 5B</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">☰</button><ul class="nav-links" id="nav-links"><li><a href="index.html">Inicio</a></li><li><a href="index.html#equipo">El equipo</a></li><li><a class="active" href="bitacora.html" aria-current="page">Bitácora</a></li></ul></nav>
+  <main id="contenido"><header class="journal-hero"><p class="eyebrow">DOCUMENTO VIVO · ACTUALIZACIÓN 01</p><h1>Bitácora del<br><em>umbral</em></h1><p>Decisiones, pasos y preguntas abiertas durante el desarrollo del Trabajo Práctico 1.</p><div class="journal-meta"><span>PROYECTO · UMBRAL 5B</span><span>ESTADO · EN DESARROLLO</span></div></header>
+    <section class="journal-content"><div class="journal-timeline">
+      <article class="journal-entry"><div class="entry-marker">01</div><div class="entry-body"><p class="eyebrow">PUNTO DE PARTIDA</p><h2>Una expedición compartida</h2><p>Leímos la consigna del TP1 y organizamos la base del sitio: una portada común, páginas individuales y una bitácora. Elegimos una temática inspirada en H. P. Lovecraft para darle una identidad reconocible al proyecto.</p><div class="entry-note"><strong>Roles acordados</strong><ul><li><b>Integrante 1 — Rubén:</b> organización inicial, estructura, perfil propio, interacción y participación en testing, README y bitácora.</li><li><b>Integrante 2 — Sergio:</b> identidad visual, paleta, tipografías, CSS compartido, perfil propio y pruebas responsive.</li><li><b>Integrantes 3 y 4:</b> participación y perfiles en pausa hasta confirmar su incorporación.</li></ul></div></div></article>
+      <article class="journal-entry"><div class="entry-marker">02</div><div class="entry-body"><p class="eyebrow">IDENTIDAD VISUAL</p><h2>Un archivo llegado del abismo</h2><p>La propuesta combina fondos verde petróleo casi negros, detalles en cobre envejecido y tonos de papel. Marcellus aporta carácter a los títulos; IM Fell English suma una voz literaria a las citas y DM Sans mantiene una lectura cómoda en textos y controles.</p><p>La portada presenta el equipo y sus expedientes; el lenguaje de archivo continúa en las fichas personales y en el registro del proceso.</p></div></article>
+      <article class="journal-entry"><div class="entry-marker">03</div><div class="entry-body"><p class="eyebrow">ESTRUCTURA E INTERACCIÓN</p><h2>El sitio empieza a responder</h2><p>Se organizaron los documentos HTML en la raíz, con CSS y JavaScript separados en sus carpetas. La portada incorpora un medidor interactivo; cada perfil activo tiene una interacción propia vinculada a la temática.</p><p>La navegación enlaza portada, equipo, perfiles y bitácora, con rutas para regresar al listado sin depender del historial del navegador.</p></div></article>
+      <article class="journal-entry journal-open"><div class="entry-marker">04</div><div class="entry-body"><p class="eyebrow">SIGUIENTE ETAPA · PENDIENTE</p><h2>Probar, completar, publicar</h2><p>Queda revisar el comportamiento real en 400 px, 900 px y 1200 px; completar las capturas y datos de publicación en el README; y registrar los cambios que surjan durante las pruebas y la integración.</p><div class="entry-note"><strong>Para cerrar la entrega</strong><ul><li>Confirmar perfiles de GitHub y repositorio público.</li><li>Completar los expedientes 03 y 04 cuando el equipo confirme su incorporación.</li><li>Publicar en Vercel y agregar la URL.</li><li>Incorporar capturas actuales y anotar los resultados de las pruebas.</li></ul></div></div></article>
+    </div><aside class="journal-aside"><div class="aside-stamp">NOTAS<br>DE CAMPO<br><span>5B · 2026</span></div><p>Un proceso visible ayuda a entender cómo se toman las decisiones y cómo evoluciona el sitio.</p><a class="text-link" href="index.html#equipo">Volver a los expedientes <span>→</span></a></aside></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">◉</span> UMBRAL <span class="brand-divider">/</span> 5B</a><p>TP1 · Desarrollo de Sistemas Web · Front End · 2026</p><a class="back-top" href="#contenido">Volver arriba ↑</a></footer><script src="js/index.js" defer></script>
+</body></html>
