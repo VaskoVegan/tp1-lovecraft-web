@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="es">
 <head>
   <meta charset="utf-8">
@@ -13,6 +14,7 @@
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
   <nav class="navbar" aria-label="Navegación principal">
     <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">◉</span> UMBRAL <span class="brand-divider">/</span> 5B</a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">☰</button>
@@ -22,32 +24,210 @@
       <li><a href="bitacora.html">Bitácora</a></li>
     </ul>
   </nav>
+
   <main id="contenido">
-    <header class="hero hero-home">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> CUADERNO DE INVESTIGACIÓN · TP1 · 2026</p>
-        <h1>El abismo<br><em>nos observa.</em></h1>
-        <p class="hero-lead">Somos un equipo de Front End explorando los límites entre diseño, código e imaginación. Este archivo reúne nuestra misión, nuestros perfiles y el rastro del proceso.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#equipo">Conocer al equipo <span aria-hidden="true">↘</span></a><a class="text-link" href="bitacora.html">Leer la bitácora <span aria-hidden="true">→</span></a></div>
+
+```
+<header class="hero hero-home">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="status-dot"></span> CUADERNO DE INVESTIGACIÓN · TP1 · 2026</p>
+    <h1>El abismo<br><em>nos observa.</em></h1>
+    <p class="hero-lead">Somos un equipo de Front End explorando los límites entre diseño, código e imaginación. Este archivo reúne nuestra misión, nuestros perfiles y el rastro del proceso.</p>
+
+    <div class="hero-actions">
+      <a class="button button-primary" href="#equipo">Conocer al equipo <span aria-hidden="true">↘</span></a>
+      <a class="text-link" href="bitacora.html">Leer la bitácora <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+
+  <div class="hero-art">
+    <img class="hero-illustration" src="img/umbral.svg" alt="Ilustración de un ojo antiguo rodeado de anillos y corrientes abisales">
+    <span class="art-caption">FIG. 01 — EL UMBRAL</span>
+  </div>
+
+  <div class="hero-index">
+    <span>ARCHIVO 05-B</span>
+    <span>LAT. 32°53′ S</span>
+    <span>ESTADO: EN ESTUDIO</span>
+  </div>
+</header>
+
+<section class="quote-band" aria-label="Cita literaria">
+  <span class="quote-mark">“</span>
+  <blockquote>La emoción más antigua y más intensa de la humanidad es el miedo; y el más antiguo y más intenso de los miedos es el miedo a lo desconocido.</blockquote>
+  <cite>— H. P. Lovecraft, <em>El horror sobrenatural en la literatura</em></cite>
+</section>
+
+<section class="section team-section" id="equipo">
+
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">01 / LOS INVESTIGADORES</p>
+      <h2>Dos miradas.<br><em>Una misma misión.</em></h2>
+    </div>
+    <p class="section-intro">Cada perfil guarda las herramientas, intereses y huellas de quien se aventura a explorar el código.</p>
+  </div>
+
+  <div class="team-grid">
+
+    <!-- RUBÉN -->
+    <article class="member-card member-one">
+
+      <div class="card-top">
+        <span class="card-number">01</span>
+        <span class="card-status"><i></i> ARCHIVO ABIERTO</span>
       </div>
-      <div class="hero-art"><img class="hero-illustration" src="img/umbral.svg" alt="Ilustración de un ojo antiguo rodeado de anillos y corrientes abisales"><span class="art-caption">FIG. 01 — EL UMBRAL</span></div>
-      <div class="hero-index"><span>ARCHIVO 05-B</span><span>LAT. 32°53′ S</span><span>ESTADO: EN ESTUDIO</span></div>
-    </header>
-    <section class="quote-band" aria-label="Cita literaria"><span class="quote-mark">“</span><blockquote>La emoción más antigua y más intensa de la humanidad es el miedo; y el más antiguo y más intenso de los miedos es el miedo a lo desconocido.</blockquote><cite>— H. P. Lovecraft, <em>El horror sobrenatural en la literatura</em></cite></section>
-    <section class="section team-section" id="equipo">
-      <div class="section-heading"><div><p class="eyebrow">01 / LOS INVESTIGADORES</p><h2>Dos miradas.<br><em>Una misma misión.</em></h2></div><p class="section-intro">Cada perfil guarda las herramientas, intereses y huellas de quien se aventura a explorar el código.</p></div>
-      <div class="team-grid">
-        <article class="member-card member-one"><div class="card-top"><span class="card-number">01</span><span class="card-status"><i></i> ARCHIVO ABIERTO</span></div><div class="avatar avatar-one" aria-hidden="true"><span>RB</span><b>✳</b></div><p class="card-kicker">ORGANIZACIÓN · TESTING</p><h3>Rubén Darío<br>Basconcelo</h3><p class="card-meta">Mendoza, Argentina <span>·</span> 48 años</p><p class="card-description">Orden, ritmo y creatividad para que cada pieza encuentre su lugar.</p><a class="card-link" href="integrante1.html">Abrir expediente <span>↗</span></a></article>
-        <article class="member-card member-two"><div class="card-top"><span class="card-number">02</span><span class="card-status"><i></i> ARCHIVO ABIERTO</span></div><div class="avatar avatar-two" aria-hidden="true"><span>SP</span><b>✦</b></div><p class="card-kicker">DISEÑO · SISTEMA VISUAL</p><h3>Sergio David<br>Pasini Cabello</h3><p class="card-meta">Mendoza, Argentina <span>·</span> 42 años</p><p class="card-description">Análisis y curiosidad científica al servicio de una experiencia clara.</p><a class="card-link" href="integrante2.html">Abrir expediente <span>↗</span></a></article>
-        <article class="member-card member-pending"><div class="card-top"><span class="card-number">03</span><span class="card-status status-pending"><i></i> EN PAUSA</span></div><div class="pending-symbol" aria-hidden="true">···</div><p class="card-kicker">INTEGRANTE 03</p><h3>Expediente<br>reservado</h3><p class="card-meta">Pendiente de incorporación</p><p class="card-description">El perfil se completará cuando se confirme la participación y sus datos.</p><span class="card-link card-link-muted">Próximamente</span></article>
-        <article class="member-card member-pending"><div class="card-top"><span class="card-number">04</span><span class="card-status status-pending"><i></i> EN PAUSA</span></div><div class="pending-symbol" aria-hidden="true">···</div><p class="card-kicker">INTEGRANTE 04</p><h3>Expediente<br>reservado</h3><p class="card-meta">Pendiente de incorporación</p><p class="card-description">El perfil se completará cuando se confirme la participación y sus datos.</p><span class="card-link card-link-muted">Próximamente</span></article>
+
+      <div class="avatar avatar-one" aria-hidden="true">
+        <img src="img/avatares/Avatar01.jpg" alt="Rubén Darío Basconcelo">
       </div>
-      <p class="pending-note"><span aria-hidden="true">✳</span> Los expedientes 03 y 04 quedan en pausa, según la planificación actual del equipo.</p>
-    </section>
-    <section class="mission-section"><div class="mission-symbol" aria-hidden="true">⌖</div><div><p class="eyebrow">02 / NUESTRA FORMA DE TRABAJAR</p><h2>El método también<br>es parte del misterio.</h2><p>Organizamos el proyecto, definimos una identidad visual y construimos cada interacción paso a paso. La bitácora registra las decisiones y los aprendizajes que van apareciendo en el camino.</p><a class="text-link" href="bitacora.html">Seguir el rastro del proceso <span>→</span></a></div><div class="mission-stamp">OBSERVAR<br>·<br>DISEÑAR<br>·<br>PROBAR</div></section>
-    <section class="interactive-section" aria-labelledby="signal-title"><div><p class="eyebrow">03 / SEÑAL DESCONOCIDA</p><h2 id="signal-title">¿Qué hay al otro lado?</h2><p>Una pequeña investigación interactiva. Cada señal altera el medidor de cordura.</p></div><div class="signal-panel"><div class="signal-readout"><span>CORDURA DEL INVESTIGADOR</span><strong id="sanity-value">100%</strong></div><div class="sanity-track" role="progressbar" aria-label="Nivel de cordura" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><span id="sanity-bar"></span></div><p id="sanity-text" aria-live="polite">La señal es débil. Por ahora, todo está en calma.</p><button class="button button-outline" id="btn-investigate" type="button">Investigar la señal <span>↗</span></button></div></section>
+
+      <p class="card-kicker">ORGANIZACIÓN · TESTING</p>
+
+      <h3>Rubén Darío<br>Basconcelo</h3>
+
+      <p class="card-meta">Mendoza, Argentina <span>·</span> 48 años</p>
+
+      <p class="card-description">Orden, ritmo y creatividad para que cada pieza encuentre su lugar.</p>
+
+      <a class="card-link" href="integrante1.html">Abrir expediente <span>↗</span></a>
+
+    </article>
+
+    <!-- SERGIO -->
+    <article class="member-card member-two">
+
+      <div class="card-top">
+        <span class="card-number">02</span>
+        <span class="card-status"><i></i> ARCHIVO ABIERTO</span>
+      </div>
+
+      <div class="avatar avatar-two" aria-hidden="true">
+        <img src="img/avatares/Avatar02.jpg" alt="Sergio David Pasini Cabello">
+      </div>
+
+      <p class="card-kicker">DISEÑO · SISTEMA VISUAL</p>
+
+      <h3>Sergio David<br>Pasini Cabello</h3>
+
+      <p class="card-meta">Mendoza, Argentina <span>·</span> 42 años</p>
+
+      <p class="card-description">Análisis y curiosidad científica al servicio de una experiencia clara.</p>
+
+      <a class="card-link" href="integrante2.html">Abrir expediente <span>↗</span></a>
+
+    </article>
+
+    <!-- INTEGRANTE 03 -->
+    <article class="member-card member-pending">
+
+      <div class="card-top">
+        <span class="card-number">03</span>
+        <span class="card-status status-pending"><i></i> EN PAUSA</span>
+      </div>
+
+      <div class="pending-symbol" aria-hidden="true">···</div>
+
+      <p class="card-kicker">INTEGRANTE 03</p>
+
+      <h3>Expediente<br>reservado</h3>
+
+      <p class="card-meta">Pendiente de incorporación</p>
+
+      <p class="card-description">El perfil se completará cuando se confirme la participación y sus datos.</p>
+
+      <span class="card-link card-link-muted">Próximamente</span>
+
+    </article>
+
+    <!-- INTEGRANTE 04 -->
+    <article class="member-card member-pending">
+
+      <div class="card-top">
+        <span class="card-number">04</span>
+        <span class="card-status status-pending"><i></i> EN PAUSA</span>
+      </div>
+
+      <div class="pending-symbol" aria-hidden="true">···</div>
+
+      <p class="card-kicker">INTEGRANTE 04</p>
+
+      <h3>Expediente<br>reservado</h3>
+
+      <p class="card-meta">Pendiente de incorporación</p>
+
+      <p class="card-description">El perfil se completará cuando se confirme la participación y sus datos.</p>
+
+      <span class="card-link card-link-muted">Próximamente</span>
+
+    </article>
+
+  </div>
+
+  <p class="pending-note">
+    <span aria-hidden="true">✳</span> Los expedientes 03 y 04 quedan en pausa, según la planificación actual del equipo.
+  </p>
+
+</section>
+
+<section class="mission-section">
+  <div class="mission-symbol" aria-hidden="true">⌖</div>
+
+  <div>
+    <p class="eyebrow">02 / NUESTRA FORMA DE TRABAJAR</p>
+    <h2>El método también<br>es parte del misterio.</h2>
+    <p>Organizamos el proyecto, definimos una identidad visual y construimos cada interacción paso a paso. La bitácora registra las decisiones y los aprendizajes que van apareciendo en el camino.</p>
+    <a class="text-link" href="bitacora.html">Seguir el rastro del proceso <span>→</span></a>
+  </div>
+
+  <div class="mission-stamp">
+    OBSERVAR<br>
+    ·<br>
+    DISEÑAR<br>
+    ·<br>
+    PROBAR
+  </div>
+</section>
+
+<section class="interactive-section" aria-labelledby="signal-title">
+
+  <div>
+    <p class="eyebrow">03 / SEÑAL DESCONOCIDA</p>
+    <h2 id="signal-title">¿Qué hay al otro lado?</h2>
+    <p>Una pequeña investigación interactiva. Cada señal altera el medidor de cordura.</p>
+  </div>
+
+  <div class="signal-panel">
+
+    <div class="signal-readout">
+      <span>CORDURA DEL INVESTIGADOR</span>
+      <strong id="sanity-value">100%</strong>
+    </div>
+
+    <div class="sanity-track" role="progressbar" aria-label="Nivel de cordura" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+      <span id="sanity-bar"></span>
+    </div>
+
+    <p id="sanity-text" aria-live="polite">La señal es débil. Por ahora, todo está en calma.</p>
+
+    <button class="button button-outline" id="btn-investigate" type="button">
+      Investigar la señal <span>↗</span>
+    </button>
+
+  </div>
+</section>
+```
+
   </main>
-  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">◉</span> UMBRAL <span class="brand-divider">/</span> 5B</a><p>TP1 · Desarrollo de Sistemas Web · Front End · 2026</p><a class="back-top" href="#contenido">Volver arriba ↑</a></footer>
+
+  <footer class="site-footer">
+    <a class="brand" href="index.html"><span class="brand-mark">◉</span> UMBRAL <span class="brand-divider">/</span> 5B</a>
+    <p>TP1 · Desarrollo de Sistemas Web · Front End · 2026</p>
+    <a class="back-top" href="#contenido">Volver arriba ↑</a>
+  </footer>
+
   <script src="js/index.js" defer></script>
+
 </body>
 </html>
+
