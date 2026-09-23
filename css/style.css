@@ -521,6 +521,12 @@ button {
 .avatar-two {
   background: radial-gradient(circle at 50% 40%, #443f32, #24291f 65%, #121713);
 }
+
+.avatar-four {
+  background: radial-gradient(circle at 50% 40%, #2a1f3d, #1a0f29 65%, #0b0612);
+  box-shadow: 0 0 12px rgba(111, 0, 255, 0.6);
+}
+
 .card-kicker {
   margin: 8px 0 7px;
   text-align: center;
