@@ -1,123 +1,376 @@
-# Umbral 5B — Archivo de campo
+# UMBRAL 5B — Archivo de campo
 
-Sitio grupal para el Trabajo Práctico 1 de Desarrollo de Sistemas Web (Front End), 2026. La propuesta presenta al equipo y documenta su proceso con una identidad visual inspirada en los archivos, la exploración y la literatura de H. P. Lovecraft.
+## Proyecto web grupal · Front End · TP1 · 2026
 
-## Estado de la entrega
+**Umbral 5B** es un sitio web grupal desarrollado para el Trabajo Práctico Grupal 1 de Desarrollo de Sistemas Web · Front End.
 
-La portada, los dos perfiles confirmados y la bitácora están desarrollados. Los expedientes 03 y 04 permanecen en pausa, tal como acordó el equipo; no se inventaron nombres ni datos personales. Antes de entregar, completar los elementos marcados como pendientes en esta guía y en la lista final.
+El proyecto presenta al equipo como un grupo de investigadores que explora la relación entre **código, diseño e imaginación**, tomando como referencia estética y conceptual el universo del horror cósmico asociado a H. P. Lovecraft.
 
-## Recorrido
+El sitio reúne una portada general, perfiles individuales, navegación interna, interacciones desarrolladas con JavaScript y una bitácora que documenta las decisiones, dificultades, pruebas y evolución del proyecto.
 
-- `index.html`: portada, presentación del equipo, expedientes y medidor interactivo.
-- `integrante1.html`: perfil e interacción de Rubén Darío Basconcelo.
-- `integrante2.html`: perfil e interacción de Sergio David Pasini Cabello.
-- `integrante3.html` y `integrante4.html`: accesos reservados para completar cuando se confirme a las personas integrantes.
-- `bitacora.html`: decisiones, roles, avances y tareas abiertas.
+---
 
-La navegación principal permite volver a Inicio, ir a los perfiles desde el listado y abrir la Bitácora. Cada perfil incluye un enlace de regreso al equipo y enlaces a los demás expedientes activos.
+## 👁️ Integrantes
 
-## Integrantes y responsabilidades
+### 01 · Rubén Darío Basconcelo
 
-| N.º | Integrante | Responsabilidad acordada | Perfil |
-|---|---|---|---|
-| 1 | Rubén Darío Basconcelo — Mendoza, 48 años | Organización inicial, estructura, perfil e interacción propios; participación en pruebas, README y Bitácora. | [Expediente 01](integrante1.html) · GitHub pendiente de confirmar |
-| 2 | Sergio David Pasini Cabello — Mendoza, 42 años | Diseño visual, identidad, tipografías y CSS compartido; perfil propio y pruebas responsive. | [Expediente 02](integrante2.html) · GitHub pendiente de confirmar |
-| 3 | En pausa | JavaScript e interactividad, según la distribución acordada. Incorporación y datos por confirmar. | Pendiente |
-| 4 | En pausa | Documentación e integración, según la distribución acordada. Incorporación y datos por confirmar. | Pendiente |
+**Responsabilidad principal:** Organización inicial del proyecto
 
-> La consigna requiere perfiles completos para cada integrante. Los expedientes 03 y 04 no se completan hasta contar con su información y participación confirmadas.
+* Organización de la estructura inicial.
+* Participación en la definición general del sitio.
+* Desarrollo de su perfil HTML.
+* Desarrollo de su interacción JavaScript.
+* Participación en pruebas y testing.
+* Participación en README y Bitácora.
 
-## Tecnologías
+**GitHub:** VaskoVegan
 
-- HTML semántico para las páginas y la navegación.
-- CSS propio, variables de diseño, animaciones y media queries.
-- JavaScript sin dependencias para las interacciones y el menú móvil.
-- Google Fonts: [Marcellus](https://fonts.google.com/specimen/Marcellus), [IM Fell English](https://fonts.google.com/specimen/IM+Fell+English) y [DM Sans](https://fonts.google.com/specimen/DM+Sans).
-- Ilustración vectorial original (`img/umbral.svg`), avatares tipográficos y motivos gráficos dibujados con CSS; no se usan fotografías personales ni imágenes de terceros.
+### 02 · Sergio David Pasini Cabello
 
-## Guía de estilos
+**Responsabilidad principal:** Diseño visual y CSS
 
-| Uso | Color |
-|---|---|
-| Fondo abisal | `#101512` |
-| Panel | `#151C18` |
-| Texto principal | `#E8E2D1` |
-| Texto secundario | `#B4B7A5` |
-| Cobre | `#C18959` |
-| Cobre claro | `#D6A273` |
-| Líneas | `rgba(210, 190, 151, 0.17)` |
+* Propuesta de identidad visual.
+* Definición de la paleta junto al equipo.
+* Definición de tipografías.
+* Desarrollo de la base del CSS compartido.
+* Desarrollo de su perfil HTML.
+* Desarrollo de su interacción JavaScript.
+* Participación en pruebas responsive.
 
-Los títulos usan Marcellus; citas y acentos literarios usan IM Fell English; el texto de lectura y los controles usan DM Sans. Los emblemas, avatares tipográficos, el ojo de portada y las estrellas se dibujan con CSS, sin icon font externo.
+**GitHub:** cspasini
 
-## Estructura
+### 03 · [NOMBRE DEL INTEGRANTE]
+
+**Responsabilidad principal:** JavaScript e interactividad
+
+* Propuesta de interacciones.
+* Implementación del JavaScript de la portada.
+* Organización y revisión de los scripts.
+* Desarrollo de su perfil HTML.
+* Desarrollo de su interacción JavaScript.
+* Revisión de errores de consola.
+* Participación en pruebas.
+
+**GitHub:** [COMPLETAR]
+
+### 04 · [NOMBRE DEL INTEGRANTE]
+
+**Responsabilidad principal:** Documentación e integración
+
+* Organización de la Bitácora.
+* Coordinación de la documentación del proceso.
+* Participación en la integración final.
+* Desarrollo de su perfil HTML.
+* Desarrollo de su interacción JavaScript.
+* Participación en README.
+* Participación en pruebas finales.
+
+**GitHub:** [COMPLETAR]
+
+> Aunque cada integrante tuvo una responsabilidad principal, las decisiones y revisiones importantes fueron realizadas de manera colaborativa.
+
+---
+
+# 🎯 Propósito del proyecto
+
+El objetivo fue construir un sitio web grupal que cumpliera con los requisitos técnicos del TP1 y, al mismo tiempo, desarrollara una identidad visual propia.
+
+El concepto de **Umbral 5B** utiliza la idea de un archivo de investigación: cada integrante representa un expediente y la navegación permite recorrer distintas partes de una investigación ficticia.
+
+La estética combina:
+
+* horror cósmico;
+* archivos de campo;
+* documentación científica;
+* tipografía editorial;
+* elementos de interfaz de investigación;
+* animaciones e interacciones inspiradas en señales desconocidas.
+
+La intención no fue reproducir literalmente una estética de Lovecraft, sino utilizarla como punto de partida para construir una identidad visual propia.
+
+---
+
+# 🛠️ Tecnologías utilizadas
+
+* **HTML5** — estructura y contenido.
+* **CSS3** — diseño visual, responsive design, animaciones y componentes.
+* **JavaScript** — interacciones dinámicas.
+* **Google Fonts** — tipografías del proyecto.
+* **Git / GitHub** — control de versiones y colaboración.
+* **Vercel** — publicación del sitio.
+
+No se utilizaron frameworks para la implementación principal. El sitio fue desarrollado utilizando HTML, CSS y JavaScript.
+
+---
+
+# 📁 Estructura del proyecto
 
 ```text
 tp1-lovecraft-web/
+│
 ├── index.html
 ├── integrante1.html
 ├── integrante2.html
-├── integrante3.html          # pendiente de incorporación
-├── integrante4.html          # pendiente de incorporación
+├── integrante3.html
+├── integrante4.html
 ├── bitacora.html
-├── img/
-│   └── umbral.svg
 ├── README.md
+│
 ├── css/
 │   └── style.css
-└── js/
-    ├── index.js
-    ├── integrante1.js
-    ├── integrante2.js
-    ├── integrante3.js        # pendiente de incorporación
-    └── integrante4.js        # pendiente de incorporación
+│
+├── js/
+│   └── index.js
+│
+└── img/
+    ├── avatares/
+    └── ...
 ```
 
-No se requiere instalar paquetes. Para una vista local, abrir `index.html` en un navegador moderno.
+La estructura mantiene los archivos HTML principales en la raíz, los estilos y scripts en carpetas separadas y los recursos gráficos dentro de `img/`.
 
-## Interacciones JavaScript
+---
 
-- **Portada — `js/index.js`:** el botón “Investigar la señal” reduce el medidor en pasos, actualiza su mensaje y su valor accesible; al llegar a cero, registra el estado final. El mismo archivo abre y cierra el menú en pantallas pequeñas.
-- **Expediente 01 — `js/integrante1.js`:** “Marcar el pulso” activa una animación y muestra notas secuenciales inspiradas en la organización y el ritmo de trabajo de Rubén.
-- **Expediente 02 — `js/integrante2.js`:** “Consultar el archivo” revela observaciones secuenciales y anima el mapa estelar.
-- **Expedientes 03 y 04:** interacciones pendientes junto con la incorporación de cada perfil.
+# 🎨 Guía de estilos
 
-## Diseño adaptable
+## Paleta
 
-La hoja compartida incluye ajustes para escritorio, tabletas y móviles. Los breakpoints explícitos corresponden a `1200px`, `900px` y `400px`. La revisión visual en esos anchos debe registrarse antes de la entrega final.
+| Uso              | Color         | Hexadecimal |
+| ---------------- | ------------- | ----------- |
+| Fondo principal  | Ink           | `#101512`   |
+| Fondo elevado    | Ink Raised    | `#151C18`   |
+| Fondo secundario | Ink Soft      | `#1B241E`   |
+| Papel principal  | Paper         | `#E8E2D1`   |
+| Papel secundario | Paper Dim     | `#B4B7A5`   |
+| Texto secundario | Muted         | `#8B9484`   |
+| Acento principal | Copper        | `#C18959`   |
+| Acento brillante | Copper Bright | `#D6A273`   |
 
-## Capturas
+La combinación busca transmitir una estética oscura, editorial y de archivo, utilizando el cobre como color de señalización y contraste.
 
-La consigna solicita capturas del sitio. **Pendiente:** agregar capturas actuales dentro de `capturas/` y enlazarlas aquí después de la revisión responsive. No se incluyen imágenes de una versión anterior como si fueran evidencia de este estado.
+## Tipografías
 
-## Repositorio y publicación
+Se utilizan fuentes de **Google Fonts**:
 
-- Repositorio remoto configurado: [github.com/VaskoVegan/tp1-lovecraft-web](https://github.com/VaskoVegan/tp1-lovecraft-web).
-- Enlace de perfil de GitHub de Rubén: pendiente de confirmar.
-- Enlace de perfil de GitHub de Sergio: pendiente de confirmar.
-- URL publicada en Vercel: pendiente de publicar y confirmar.
+* **Marcellus** — títulos y elementos destacados.
+* **IM Fell English** — textos de carácter literario y expresivo.
+* **DM Sans** — navegación, etiquetas, información técnica y textos de interfaz.
 
-La planilla de entregas debe recibir un único enlace: el repositorio grupal público. La URL de Vercel se documenta aquí.
+## Iconografía
 
-## Uso de IA y autoría
+Se utilizan principalmente:
 
-Se utilizó ChatGPT (OpenAI) como asistente en esta etapa para revisar la consigna, proponer estructura y redacción, y apoyar la implementación de HTML, CSS y JavaScript. El equipo debe revisar y comprender el código, contrastar el contenido con sus decisiones y registrar qué modificó antes de entregar.
+* símbolos tipográficos;
+* caracteres geométricos;
+* indicadores de archivo;
+* elementos circulares;
+* símbolos relacionados con investigación y señalización.
 
-**Pendiente de completar por el equipo:** indicar plan gratuito o pago y experiencia previa; describir los criterios de los recursos generados; anotar los cambios humanos realizados tras revisar las sugerencias. Los avatares son monogramas CSS creados a partir de iniciales, no retratos generados por IA.
+La iconografía se mantiene deliberadamente simple para no competir con la información principal.
 
-## Evolución prevista
+---
 
-1. Confirmar la participación, datos y perfiles de GitHub de integrantes 3 y 4.
-2. Completar sus páginas e interacciones propias.
-3. Hacer y registrar la revisión visual a 400 px, 900 px y 1200 px.
-4. Incorporar capturas, URL de Vercel y una bitácora con dificultades y soluciones observadas durante esas revisiones.
-5. Actualizar el registro del uso de IA con la experiencia y el plan utilizados por el equipo.
+# 🧭 Navegación
 
-## Lista antes de entregar
+El sitio cuenta con un menú principal accesible desde las distintas páginas:
 
-- [ ] Completar los GitHub de Rubén y Sergio y enlazar los perfiles desde el README.
-- [ ] Revisar y registrar responsive a 400 px, 900 px y 1200 px.
-- [ ] Incorporar capturas actuales y agregar enlaces en la sección Capturas.
-- [ ] Publicar en Vercel y agregar la URL.
-- [ ] Completar la declaración de uso de IA sobre plan, experiencia y revisión humana.
-- [ ] Si se incorporan integrantes 3 y 4, completar sus datos, páginas e interacciones.
-- [ ] Confirmar que el repositorio sea público y que la navegación funcione en la publicación.
+* Inicio
+* El equipo
+* Bitácora
+
+Además, cada perfil dispone de enlaces internos que permiten regresar a las secciones correspondientes sin depender del botón **Atrás** del navegador.
+
+La navegación fue revisada para evitar enlaces rotos y permitir recorrer el sitio de forma continua.
+
+---
+
+# 👤 Perfiles individuales
+
+Cada integrante cuenta con una página individual que presenta:
+
+* foto o avatar;
+* nombre;
+* ciudad;
+* edad;
+* cuatro habilidades;
+* tres películas favoritas;
+* tres discos/artistas favoritos;
+* enlaces externos correspondientes;
+* una interacción desarrollada con JavaScript.
+
+Los perfiles utilizan una estructura visual compartida para mantener la identidad general del proyecto, pero cada integrante aporta sus propios contenidos.
+
+---
+
+# ⚡ Interactividad JavaScript
+
+El proyecto incorpora JavaScript tanto en la portada como en los perfiles individuales.
+
+## Portada — Investigación de la señal
+
+La portada contiene una interacción basada en un medidor de cordura.
+
+El usuario puede investigar una señal desconocida. Cada interacción reduce progresivamente el nivel de cordura del investigador.
+
+La secuencia evoluciona de la siguiente manera:
+
+1. La cordura comienza en 100%.
+2. Cada investigación reduce el valor.
+3. Al disminuir la cordura aparecen cambios visuales y efectos de corrupción.
+4. La interfaz comienza a presentar glitches y señales extrañas.
+5. Al llegar a 0%, la interfaz colapsa y aparecen símbolos/rúnicos.
+6. El mensaje cambia a una respuesta final.
+7. Después de unos segundos, la experiencia se reinicia y la señal vuelve a estar disponible.
+
+La interacción fue diseñada para que JavaScript no sea solamente un requisito técnico, sino que forme parte de la narrativa del sitio.
+
+**Captura:**
+`[INSERTAR CAPTURA DE LA INTERACCIÓN DE LA PORTADA]`
+
+---
+
+## Perfil — Rubén Darío Basconcelo
+
+La página de Rubén incorpora una interacción JavaScript propia vinculada con la presentación de su perfil.
+
+**Descripción:**
+[COMPLETAR CON LA INTERACCIÓN DEFINITIVA]
+
+**Captura:**
+`[INSERTAR CAPTURA]`
+
+---
+
+## Perfil — Sergio David Pasini Cabello
+
+La página de Sergio incorpora una interacción JavaScript propia vinculada con la presentación de su perfil.
+
+**Descripción:**
+[COMPLETAR CON LA INTERACCIÓN DEFINITIVA]
+
+**Captura:**
+`[INSERTAR CAPTURA]`
+
+---
+
+## Perfil — Integrante 03
+
+El perfil incorpora una interacción JavaScript propia.
+
+**Descripción:**
+[COMPLETAR]
+
+**Captura:**
+`[INSERTAR CAPTURA]`
+
+---
+
+## Perfil — Integrante 04
+
+El perfil incorpora una interacción JavaScript propia.
+
+**Descripción:**
+[COMPLETAR]
+
+**Captura:**
+`[INSERTAR CAPTURA]`
+
+---
+
+# 📱 Diseño responsive
+
+El sitio fue desarrollado considerando diferentes tamaños de pantalla.
+
+Se revisaron especialmente los breakpoints solicitados por la consigna:
+
+* **400 px** — teléfonos pequeños.
+* **900 px** — transición entre dispositivos medianos y escritorio.
+* **1200 px** — escritorio amplio.
+
+Además, se utilizaron puntos intermedios cuando fue necesario para mejorar la adaptación de componentes específicos.
+
+Se revisaron:
+
+* navegación;
+* tarjetas de integrantes;
+* perfiles;
+* tarjetas de habilidades;
+* tarjetas multimedia;
+* imágenes;
+* textos largos;
+* bitácora;
+* interacción JavaScript;
+* ausencia de desbordes horizontales.
+
+---
+
+# 📓 Bitácora
+
+La sección **Bitácora** documenta la evolución del proyecto y permite reconstruir las principales decisiones tomadas durante el desarrollo.
+
+Se registraron, entre otros aspectos:
+
+* organización inicial;
+* definición del concepto;
+* decisiones de diseño;
+* construcción de la identidad visual;
+* desarrollo del CSS;
+* creación de perfiles;
+* incorporación de JavaScript;
+* problemas encontrados;
+* pruebas responsive;
+* ajustes de navegación;
+* cambios realizados durante la integración;
+* aprendizajes obtenidos durante el proceso.
+
+La bitácora se encuentra disponible desde el menú principal del sitio.
+
+---
+
+# 🤝 Organización y trabajo colaborativo
+
+El proyecto se organizó mediante responsabilidades principales para distribuir el trabajo, pero las decisiones relevantes fueron revisadas de manera conjunta.
+
+Las tareas compartidas incluyeron:
+
+* definición del concepto;
+* elección del nombre del proyecto;
+* identidad visual;
+* estructura de navegación;
+* revisión del CSS;
+* revisión responsive;
+* testing general;
+* revisión de enlaces;
+* revisión de JavaScript;
+* Bitácora;
+* README;
+* preparación de la entrega.
+
+La división de responsabilidades permitió organizar el trabajo sin convertir cada área en un trabajo aislado.
+
+---
+
+# 🤖 Uso de Inteligencia Artificial
+
+Durante el desarrollo se utilizaron herramientas de Inteligencia Artificial como asistentes técnicos y creativos.
+
+## Herramientas utilizadas
+
+**ChatGPT — OpenAI**
+
+Se utilizó como herramienta de asistencia durante distintas etapas del desarrollo, principalmente para:
+
+* analizar la consigna;
+* proponer alternativas de estructura;
+* revisar y mejorar código HTML, CSS y JavaScript;
+* detectar posibles problemas de responsive design;
+* plantear soluciones para interacciones;
+* realizar debugging;
+* revisar accesibilidad y navegación;
+* redactar y organizar documentación.
+
+La IA también se utilizó como herramienta de discusión para evaluar alternativas de diseño y detectar inconsistencias.
+
+## Código
+
+La IA fue utilizada como apoyo, pero el código incorporado al proyecto fue revisado, adaptado

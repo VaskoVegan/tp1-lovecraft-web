@@ -54,16 +54,62 @@ document.addEventListener('DOMContentLoaded', () => {
     'Algo respondió desde el otro lado. Conviene mantener la calma.',
     'La señal se ha apagado. El expediente vuelve a quedar en silencio.'
   ];
-  let sanity = 100;
-  button.addEventListener('click', () => {
-    sanity = Math.max(0, sanity - 20);
-    bar.style.width = `${sanity}%`;
-    value.textContent = `${sanity}%`;
+let sanity = 100;
+let collapsing = false;
+
+button.addEventListener('click', () => {
+  if (collapsing) return;
+
+  sanity = Math.max(0, sanity - 20);
+
+  bar.style.width = `${sanity}%`;
+  value.textContent = `${sanity}%`;
+  progress.setAttribute('aria-valuenow', String(sanity));
+
+  if (sanity > 0) {
     message.textContent = signals[(100 - sanity) / 20];
-    progress.setAttribute('aria-valuenow', String(sanity));
-    if (sanity === 0) {
-      button.disabled = true;
-      button.innerHTML = 'Señal registrada <span aria-hidden="true">✓</span>';
+
+    if (sanity <= 40) {
+      progress.closest('.signal-panel').classList.add('signal-corrupted');
     }
-  });
+
+    return;
+  }
+
+  /* =======================================================
+     COLAPSO — LA SEÑAL RESPONDE
+     ======================================================= */
+
+  collapsing = true;
+
+  const panel = progress.closest('.signal-panel');
+
+  panel.classList.remove('signal-corrupted');
+  panel.classList.add('signal-collapse');
+
+  value.textContent = 'Ø';
+  message.textContent = 'NO ERA UNA SEÑAL. ERA UNA RESPUESTA.';
+  button.disabled = true;
+  button.textContent = 'SEÑAL PERDIDA';
+
+  /* =======================================================
+     REINICIO DEL EXPEDIENTE
+     ======================================================= */
+
+  setTimeout(() => {
+    panel.classList.remove('signal-collapse');
+
+    sanity = 100;
+    collapsing = false;
+
+    bar.style.width = '100%';
+    value.textContent = '100%';
+    message.textContent = signals[0];
+
+    progress.setAttribute('aria-valuenow', '100');
+
+    button.disabled = false;
+    button.innerHTML = 'Investigar la señal <span>↗</span>';
+  }, 2200);
+});
 });
