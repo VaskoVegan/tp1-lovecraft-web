@@ -1,20 +1,459 @@
 <!doctype html>
 <html lang="es">
+
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101512">
-  <meta name="description" content="Expediente de Sergio David Pasini Cabello, integrante del equipo Umbral 5B.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101512">
+
+  <meta
+    name="description"
+    content="Expediente de Sergio David Pasini Cabello, integrante del equipo Umbral 5B."
+  >
+
   <title>Expediente 02 — Sergio Pasini Cabello</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=Marcellus&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=Marcellus&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
-  <nav class="navbar" aria-label="Navegación principal"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">◉</span> UMBRAL <span class="brand-divider">/</span> 5B</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">☰</button><ul class="nav-links" id="nav-links"><li><a href="index.html">Inicio</a></li><li><a href="index.html#equipo">El equipo</a></li><li><a href="bitacora.html">Bitácora</a></li></ul></nav>
-  <main class="profile-page" id="contenido"><a class="back-link" href="index.html#equipo">← Volver al equipo</a>
-    <header class="profile-hero"><div class="profile-portrait avatar-two" aria-hidden="true"><span>SP</span><b>✦</b></div><div><p class="eyebrow">EXPEDIENTE DE CAMPO · N.º 02</p><h1>Sergio David<br><em>Pasini Cabello</em></h1><p class="profile-location">⌖ Mendoza, Argentina <span>·</span> 42 años</p><p class="profile-role">DISEÑO VISUAL <span>／</span> SISTEMA CSS</p></div><div class="profile-index">ARCHIVO<br>ABIERTO<br><span>2026</span></div></header>
-    <section class="profile-intro"><span class="quote-mark">“</span><p>Observar con método también es una forma de descubrir.</p></section>
-    <section class="profile-data" aria-label="Intereses y habilidades"><article class="data-panel"><p class="eyebrow">01 / HABILIDADES</p><h2>Herramientas<br>de investigación</h2><ul class="detail-list"><li><span>01</span> Análisis y resolución de problemas</li><li><span>02</span> Análisis de datos y pensamiento analítico</li><li><span>03</span> Investigación y metodología científica</li><li><span>04</span> Química computacional / IA aplicada</li></ul></article><article class="data-panel"><p class="eyebrow">02 / CINE</p><h2>Visiones<br>favoritas</h2><ol class="detail-list"><li><span>01</span> Mulholland Drive</li><li><span>02</span> El señor de los anillos</li><li><span>03</span> Inception</li></ol></article><article class="data-panel"><p class="eyebrow">03 / MÚSICA</p><h2>Frecuencias<br>preferidas</h2><ul class="detail-list"><li><span>01</span> Soda Stereo</li><li><span>02</span> Peligrosos Gorriones</li><li><span>03</span> Babasónicos</li></ul></article></section>
-    <section class="profile-interaction"><div><p class="eyebrow">04 / INTERACCIÓN JAVASCRIPT</p><h2>El observatorio</h2><p>Buscá una señal en los datos y revelá una nota del archivo.</p></div><div class="oracle-console"><div class="star-map" aria-hidden="true">✧　·　✦<br>　·　✧　·<br>✦　　·　✧</div><p id="oracle-message" aria-live="polite">El observatorio permanece en silencio.</p><button class="button button-primary" id="btn-oracle" type="button">Consultar el archivo <span>↗</span></button></div></section>
-    <nav class="profile-pagination" aria-label="Otros expedientes"><a href="integrante1.html">← Expediente 01</a><a href="index.html">Portada →</a></nav>
+
+  <a class="skip-link" href="#contenido">
+    Saltar al contenido
+  </a>
+
+  <!-- NAVEGACIÓN -->
+  <nav class="navbar" aria-label="Navegación principal">
+
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">◉</span>
+      UMBRAL
+      <span class="brand-divider">/</span>
+      5B
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="nav-links"
+      aria-label="Abrir menú"
+    >
+      ☰
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li>
+        <a href="index.html">Inicio</a>
+      </li>
+
+      <li>
+        <a href="index.html#equipo">El equipo</a>
+      </li>
+
+      <li>
+        <a href="bitacora.html">Bitácora</a>
+      </li>
+    </ul>
+
+  </nav>
+
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="profile-page" id="contenido">
+
+    <a class="back-link" href="index.html#equipo">
+      ← Volver al equipo
+    </a>
+
+
+    <!-- CABECERA DEL EXPEDIENTE -->
+    <header class="profile-hero">
+
+      <div
+        class="profile-portrait avatar-two"
+        aria-label="Retrato de Sergio Pasini"
+        style="
+          background-image: url('img/avatares/avatar02.jpg');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <span aria-hidden="true">SP</span>
+        <b aria-hidden="true">✦</b>
+      </div>
+
+
+      <div>
+
+        <p class="eyebrow">
+          EXPEDIENTE DE CAMPO · N.º 02
+        </p>
+
+        <h1>
+          Sergio David<br>
+          <em>Pasini Cabello</em>
+        </h1>
+
+        <p class="profile-location">
+          ⌖ Mendoza, Argentina
+          <span>·</span>
+          42 años
+        </p>
+
+        <p class="profile-role">
+          DISEÑO VISUAL
+          <span>／</span>
+          SISTEMA CSS
+        </p>
+
+      </div>
+
+
+      <div class="profile-index">
+        ARCHIVO<br>
+        ABIERTO<br>
+        <span>2026</span>
+      </div>
+
+    </header>
+
+
+    <!-- INTRODUCCIÓN -->
+    <section class="profile-intro">
+
+      <span class="quote-mark">“</span>
+
+      <p>
+        Observar con método también es una forma de descubrir.
+      </p>
+
+    </section>
+
+
+    <!-- DATOS -->
+    <section
+      class="profile-data"
+      aria-label="Intereses y habilidades"
+    >
+
+      <!-- HABILIDADES -->
+      <article class="data-panel">
+
+        <p class="eyebrow">
+          01 / HABILIDADES
+        </p>
+
+        <h2>
+          Herramientas<br>
+          de investigación
+        </h2>
+
+        <ul class="detail-list">
+
+          <li>
+            <span>01</span>
+            Análisis y resolución de problemas
+          </li>
+
+          <li>
+            <span>02</span>
+            Análisis de datos y pensamiento analítico
+          </li>
+
+          <li>
+            <span>03</span>
+            Investigación y metodología científica
+          </li>
+
+          <li>
+            <span>04</span>
+            Química computacional / IA aplicada
+          </li>
+
+        </ul>
+
+      </article>
+
+
+      <!-- CINE -->
+      <article class="data-panel">
+
+        <p class="eyebrow">
+          02 / CINE
+        </p>
+
+        <h2>
+          Visiones<br>
+          favoritas
+        </h2>
+
+<div class="media-cards">
+
+  <div class="media-card">
+    <div class="media-card-inner">
+
+      <div class="media-card-front">
+        <img
+          src="img/cine/sergio-mulholland-drive.jpg"
+          alt="Mulholland Drive"
+        >
+        <span>Mulholland Drive</span>
+      </div>
+
+        <div class="media-card-back">
+        <span>01 / ARCHIVO</span>
+        <p>Mulholland Drive</p>
+        <small>
+            Misterio, identidad y sueños que se mezclan hasta volver incierta la frontera entre realidad y ficción.
+        </small>
+        </div>
+
+    </div>
+  </div>
+
+
+  <div class="media-card">
+    <div class="media-card-inner">
+
+      <div class="media-card-front">
+        <img
+          src="img/cine/sergio-senor-anillos.jpg"
+          alt="El señor de los anillos"
+        >
+        <span>El señor de los anillos</span>
+      </div>
+
+        <div class="media-card-back">
+        <span>02 / ARCHIVO</span>
+        <p>El señor de los anillos</p>
+        <small>
+            Una historia de amistad, poder y resistencia en un viaje marcado por la responsabilidad y el sacrificio.
+        </small>
+        </div>
+
+    </div>
+  </div>
+
+
+  <div class="media-card">
+    <div class="media-card-inner">
+
+      <div class="media-card-front">
+        <img
+          src="img/cine/sergio-inception.jpg"
+          alt="Inception"
+        >
+        <span>Inception</span>
+      </div>
+
+        <div class="media-card-back">
+        <span>03 / ARCHIVO</span>
+        <p>Inception</p>
+        <small>
+            Sueños dentro de sueños, percepción y memoria en una historia donde la realidad nunca es completamente segura.
+        </small>
+        </div>
+
+    </div>
+  </div>
+
+</div>
+      </article>
+
+
+      <!-- MÚSICA -->
+      <article class="data-panel">
+
+        <p class="eyebrow">
+          03 / MÚSICA
+        </p>
+
+        <h2>
+          Frecuencias<br>
+          preferidas
+        </h2>
+
+<div class="media-cards">
+
+  <div class="media-card">
+    <div class="media-card-inner">
+
+      <div class="media-card-front">
+        <img
+          src="img/musica/soda-stereo.jpg"
+          alt="Soda Stereo"
+        >
+        <span>Soda Stereo</span>
+      </div>
+
+        <div class="media-card-back">
+        <span>01 / ARCHIVO</span>
+        <p>Soda Stereo</p>
+        <small>
+            Una referencia central del rock argentino, entre atmósferas, melodías y una identidad sonora inconfundible.
+        </small>
+        </div>
+
+    </div>
+  </div>
+
+
+  <div class="media-card">
+    <div class="media-card-inner">
+
+      <div class="media-card-front">
+        <img
+          src="img/musica/peligrosos-gorriones.jpg"
+          alt="Peligrosos Gorriones"
+        >
+        <span>Peligrosos Gorriones</span>
+      </div>
+
+        <div class="media-card-back">
+        <span>02 / ARCHIVO</span>
+        <p>Peligrosos Gorriones</p>
+        <small>
+            Rock argentino de los noventa, con una identidad particular entre la canción, la experimentación y la intensidad.
+        </small>
+        </div>
+
+    </div>
+  </div>
+
+
+  <div class="media-card">
+    <div class="media-card-inner">
+
+      <div class="media-card-front">
+        <img
+          src="img/musica/babasonicos.jpg"
+          alt="Babasónicos"
+        >
+        <span>Babasónicos</span>
+      </div>
+
+        <div class="media-card-back">
+        <span>03 / ARCHIVO</span>
+        <p>Babasónicos</p>
+        <small>
+            Una trayectoria marcada por la reinvención, la provocación y una búsqueda constante de nuevas formas sonoras.
+        </small>
+        </div>
+
+    </div>
+  </div>
+
+</div>
+      </article>
+
+    </section>
+
+
+    <!-- INTERACCIÓN JAVASCRIPT -->
+    <section class="profile-interaction">
+
+      <div>
+
+        <p class="eyebrow">
+          04 / INTERACCIÓN JAVASCRIPT
+        </p>
+
+        <h2>
+          El observatorio
+        </h2>
+
+        <p>
+          Buscá una señal en los datos y revelá una nota del archivo.
+        </p>
+
+      </div>
+
+
+      <div class="oracle-console">
+
+        <div
+          class="star-map"
+          aria-hidden="true"
+        >
+          ✧　·　✦<br>
+          　·　✧　·<br>
+          ✦　　·　✧
+        </div>
+
+        <p
+          id="oracle-message"
+          aria-live="polite"
+        >
+          El observatorio permanece en silencio.
+        </p>
+
+        <button
+          class="button button-primary"
+          id="btn-oracle"
+          type="button"
+        >
+          Consultar el archivo
+          <span>↗</span>
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- PAGINACIÓN -->
+    <nav
+      class="profile-pagination"
+      aria-label="Otros expedientes"
+    >
+
+      <a href="integrante1.html">
+        ← Expediente 01
+      </a>
+
+      <a href="index.html">
+        Portada →
+      </a>
+
+    </nav>
+
   </main>
-  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">◉</span> UMBRAL <span class="brand-divider">/</span> 5B</a><p>TP1 · Desarrollo de Sistemas Web · Front End · 2026</p><a class="back-top" href="#contenido">Volver arriba ↑</a></footer><script src="js/index.js" defer></script><script src="js/integrante2.js" defer></script>
-</body></html>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <a class="brand" href="index.html">
+      <span class="brand-mark">◉</span>
+      UMBRAL
+      <span class="brand-divider">/</span>
+      5B
+    </a>
+
+    <p>
+      TP1 · Desarrollo de Sistemas Web · Front End · 2026
+    </p>
+
+    <a class="back-top" href="#contenido">
+      Volver arriba ↑
+    </a>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="js/index.js" defer></script>
+  <script src="js/integrante2.js" defer></script>
+
+</body>
+
+</html>

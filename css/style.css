@@ -16,3 +16,226 @@
 @media(max-width:620px){.navbar{height:64px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:63px;left:0;right:0;padding:12px 6vw 19px;background:rgba(16,21,18,.98);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:0}.nav-links.is-open{display:flex}.nav-links li{width:100%}.nav-links a{display:block;width:100%;padding:12px 0}.hero-home{padding:61px 7vw 73px;grid-template-columns:1fr;gap:0}.hero-copy{max-width:520px}.hero .eyebrow{font-size:.59rem}.hero h1{font-size:clamp(2.75rem,12vw,4rem)}.hero-lead{font-size:.9rem}.hero-art{width:min(78vw,340px);margin:4px auto 5px}.hero-index{bottom:17px;left:7vw;right:7vw;font-size:.48rem;letter-spacing:.08em}.quote-band{padding:43px 7vw}.quote-band blockquote{font-size:1.18rem}.section{padding:73px 7vw}.section-heading{display:block;margin-bottom:30px}.section-heading h2{font-size:2.45rem}.section-intro{margin-top:15px;font-size:.83rem}.team-grid{grid-template-columns:1fr 1fr;gap:11px}.member-card{min-height:361px;padding:15px 11px}.card-status{font-size:.43rem;letter-spacing:.06em}.card-status i{margin-right:3px}.avatar{width:76px;height:76px;margin:15px auto}.avatar span{font-size:1rem}.avatar b{right:10px}.card-kicker{font-size:.47rem;letter-spacing:.1em}.member-card h3{font-size:.97rem;min-height:46px}.card-meta{font-size:.6rem}.card-description{font-size:.78rem;min-height:48px}.card-link{font-size:.58rem;letter-spacing:.03em}.pending-symbol{height:106px}.pending-note{font-size:.68rem}.mission-section{padding:45px 7vw;grid-template-columns:1fr;gap:16px}.mission-symbol{width:53px;height:53px;font-size:1.5rem}.mission-section h2{font-size:2rem}.mission-section>div:nth-child(2)>p:not(.eyebrow){font-size:.82rem}.interactive-section{padding:68px 7vw;grid-template-columns:1fr;gap:21px}.interactive-section h2{font-size:2.1rem}.signal-panel{padding:22px 19px}.profile-page{padding:27px 6vw 10px}.back-link{margin-bottom:22px}.profile-hero{grid-template-columns:83px 1fr;gap:15px;padding-bottom:27px}.profile-portrait{width:78px;height:78px}.profile-portrait span{font-size:1.15rem}.profile-portrait b{right:8px;top:2px}.profile-hero .eyebrow{font-size:.49rem;letter-spacing:.12em;margin-bottom:11px}.profile-hero h1{font-size:clamp(1.8rem,8.2vw,2.7rem);letter-spacing:-.04em;margin-bottom:8px}.profile-location{font-size:.66rem}.profile-role{font-size:.49rem;line-height:1.6;letter-spacing:.1em;margin-top:11px}.profile-index{position:absolute;right:0;bottom:12px;font-size:.42rem}.profile-intro{gap:11px;padding:22px 0 5px}.profile-intro .quote-mark{font-size:2.6rem}.profile-intro p{font-size:1.06rem}.profile-data{grid-template-columns:1fr 1fr;gap:10px;padding:15px 0 48px}.data-panel{min-height:255px;padding:17px 13px}.data-panel:first-child{grid-column:span 2;grid-row:auto;min-height:unset}.data-panel .eyebrow{font-size:.52rem;letter-spacing:.13em;margin-bottom:13px}.data-panel h2{font-size:1.27rem;min-height:57px}.detail-list{margin-top:14px}.detail-list li{gap:5px;padding:8px 0;font-size:.7rem}.detail-list li span{flex-basis:18px;font-size:.56rem}.profile-interaction{grid-template-columns:1fr;gap:16px;padding:32px 0 39px}.profile-interaction h2{font-size:1.85rem}.profile-interaction>div:first-child>p:last-child{font-size:.8rem}.pulse-console,.oracle-console{min-height:205px;padding:17px}.profile-pagination{padding-bottom:25px}.journal-hero{padding:66px 7vw 39px}.journal-hero h1{font-size:clamp(3rem,14vw,4.6rem)}.journal-hero>p:not(.eyebrow){font-size:.85rem}.journal-meta{gap:13px;justify-content:space-between;font-size:.46rem;letter-spacing:.07em}.journal-content{display:block;padding:14px 7vw 67px}.journal-aside{display:flex;align-items:center;gap:17px;padding:3px 0 0 18px}.journal-aside .aside-stamp{flex:0 0 77px;width:77px;height:77px;margin:0;font-size:.48rem}.journal-aside p{font-size:.76rem}.journal-aside .text-link{font-size:.62rem}.journal-entry{padding-left:25px;padding-bottom:36px}.entry-marker{left:-15px;width:29px;height:29px;font-size:.62rem}.journal-entry h2{font-size:1.5rem}.journal-entry p:not(.eyebrow){font-size:.81rem}.entry-note{padding:14px;font-size:.73rem}.site-footer{padding:20px 6vw;flex-wrap:wrap;justify-content:space-between}.site-footer .brand{font-size:.75rem}.site-footer p{width:100%;order:3;margin:0}.back-top{font-size:.62rem}}
 @media(max-width:400px){.hero-home{padding-left:6vw;padding-right:6vw}.hero h1{font-size:2.55rem}.hero-actions{gap:15px}.button{padding:0 13px;font-size:.64rem}.hero-index{font-size:.42rem;letter-spacing:.03em}.section{padding-left:6vw;padding-right:6vw}.team-grid{gap:8px}.member-card{padding:13px 8px;min-height:350px}.card-top{align-items:flex-start}.card-status{font-size:.39rem}.member-card h3{font-size:.91rem}.card-description{font-size:.72rem}.card-link{font-size:.54rem}.pending-note{line-height:1.6}.profile-role{font-size:.44rem}.profile-hero h1{font-size:1.85rem}.profile-location{font-size:.61rem}.profile-data{gap:8px}.data-panel{padding:15px 10px}.detail-list li{font-size:.67rem}.journal-meta{font-size:.42rem}.journal-aside{align-items:flex-start;flex-wrap:wrap}.journal-aside p{flex:1}.journal-aside .text-link{margin-left:94px;margin-top:-14px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* =========================================================
+   TARJETAS INTERACTIVAS — CINE Y MÚSICA
+   ========================================================= */
+
+.media-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.media-card {
+  height: 190px;
+  min-width: 0;
+  perspective: 1000px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.media-card:hover {
+  transform: translateY(-6px);
+}
+
+.media-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s ease;
+  transform-style: preserve-3d;
+}
+
+.media-card:hover .media-card-inner {
+  transform: rotateY(180deg);
+}
+
+.media-card-front,
+.media-card-back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  box-sizing: border-box;
+}
+
+.media-card-front {
+  background: var(--ink-soft);
+}
+
+.media-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.media-card-front::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(16, 21, 18, 0.9),
+    rgba(16, 21, 18, 0.05) 65%
+  );
+}
+
+.media-card-front span {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 10px;
+  z-index: 2;
+  color: var(--paper);
+  font-family: var(--display);
+  font-size: 0.85rem;
+  line-height: 1.15;
+}
+
+
+/* REVERSO */
+
+.media-card-back {
+  transform: rotateY(180deg);
+  background: var(--ink-raised);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 24px 28px;
+  box-sizing: border-box;
+}
+
+.media-card-back span {
+  color: var(--copper);
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 10px;
+}
+
+.media-card-back p {
+  margin: 0 0 10px;
+  color: var(--paper);
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.media-card-back small {
+  max-width: 220px;
+  color: var(--paper-dim);
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+
+/* PANTALLAS INTERMEDIAS */
+
+@media (max-width: 1000px) {
+
+  .media-card {
+    height: 175px;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 620px) {
+
+  .media-cards {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .media-card {
+    height: 210px;
+  }
+
+}
+
+
+/* Elevación de las tarjetas */
+
+.media-card {
+  transition: transform 0.3s ease;
+}
+
+.media-card:hover {
+  transform: translateY(-6px);
+}
+
+.media-card:hover .media-card-inner {
+  transition: transform 0.7s ease;
+}
+
+
+/* Ajuste de textos dentro de las tarjetas */
+
+.media-card-front span {
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.media-card-back {
+  overflow-y: auto;
+}
+
+.media-card-back p {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.media-card-back small {
+  display: block;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+
+/* Ajuste para pantallas grandes */
+
+@media (min-width: 901px) {
+  .media-cards {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   PERFIL — SECCIONES EN FILAS INDEPENDIENTES
+   ========================================================= */
+
+@media (min-width: 901px) {
+
+  .profile-data {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .data-panel:first-child {
+    grid-row: auto;
+  }
+
+}
+
+/* Ajuste de tarjetas en escritorio */
+
+@media (min-width: 901px) {
+
+  .media-card {
+    height: 215px;
+  }
+
+}

@@ -1,20 +1,459 @@
 <!doctype html>
 <html lang="es">
+
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101512">
-  <meta name="description" content="Expediente de Rubén Darío Basconcelo, integrante del equipo Umbral 5B.">
-  <title>Expediente 01 — Rubén Basconcelo</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=Marcellus&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101512">
+
+  <meta
+    name="description"
+    content="Expediente de Rubén Darío Basconcelo, integrante del equipo Umbral 5B."
+  >
+
+  <title>Expediente 01 — Rubén Darío Basconcelo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=Marcellus&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
-  <nav class="navbar" aria-label="Navegación principal"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">◉</span> UMBRAL <span class="brand-divider">/</span> 5B</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">☰</button><ul class="nav-links" id="nav-links"><li><a href="index.html">Inicio</a></li><li><a href="index.html#equipo">El equipo</a></li><li><a href="bitacora.html">Bitácora</a></li></ul></nav>
-  <main class="profile-page" id="contenido"><a class="back-link" href="index.html#equipo">← Volver al equipo</a>
-    <header class="profile-hero"><div class="profile-portrait avatar-one" aria-hidden="true"><span>RB</span><b>✳</b></div><div><p class="eyebrow">EXPEDIENTE DE CAMPO · N.º 01</p><h1>Rubén Darío<br><em>Basconcelo</em></h1><p class="profile-location">⌖ Mendoza, Argentina <span>·</span> 48 años</p><p class="profile-role">ORGANIZACIÓN INICIAL DEL PROYECTO <span>／</span> TESTING</p></div><div class="profile-index">ARCHIVO<br>ABIERTO<br><span>2026</span></div></header>
-    <section class="profile-intro"><span class="quote-mark">“</span><p>El ritmo de una buena idea también se construye en equipo.</p></section>
-    <section class="profile-data" aria-label="Intereses y habilidades"><article class="data-panel"><p class="eyebrow">01 / HABILIDADES</p><h2>Herramientas<br>de investigación</h2><ul class="detail-list"><li><span>01</span> Batería / Drummer</li><li><span>02</span> Creatividad</li><li><span>03</span> Resolución de problemas</li><li><span>04</span> Trabajo en equipo</li><li><span>05</span> Aprendizaje continuo</li></ul></article><article class="data-panel"><p class="eyebrow">02 / CINE</p><h2>Visiones<br>favoritas</h2><ol class="detail-list"><li><span>01</span> El club de la pelea</li><li><span>02</span> Matrix</li><li><span>03</span> El señor de los anillos</li></ol></article><article class="data-panel"><p class="eyebrow">03 / MÚSICA</p><h2>Frecuencias<br>preferidas</h2><ul class="detail-list"><li><span>01</span> Tool</li><li><span>02</span> Primus</li><li><span>03</span> Nine Inch Nails</li></ul></article></section>
-    <section class="profile-interaction"><div><p class="eyebrow">04 / INTERACCIÓN JAVASCRIPT</p><h2>La percusión del abismo</h2><p>Activá el pulso y escuchá cómo despierta el archivo.</p></div><div class="pulse-console"><div class="pulse-orb" id="pulse-orb" aria-hidden="true"><span></span></div><p id="pulse-message" aria-live="polite">El archivo espera una señal.</p><button class="button button-primary" id="btn-pulse" type="button">Marcar el pulso <span>↗</span></button></div></section>
-    <nav class="profile-pagination" aria-label="Otros expedientes"><a href="index.html">← Portada</a><a href="integrante2.html">Expediente 02 →</a></nav>
+
+  <a class="skip-link" href="#contenido">
+    Saltar al contenido
+  </a>
+
+  <!-- NAVEGACIÓN -->
+  <nav class="navbar" aria-label="Navegación principal">
+
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">◉</span>
+      UMBRAL
+      <span class="brand-divider">/</span>
+      5B
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="nav-links"
+      aria-label="Abrir menú"
+    >
+      ☰
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+
+      <li>
+        <a href="index.html">Inicio</a>
+      </li>
+
+      <li>
+        <a href="index.html#equipo">El equipo</a>
+      </li>
+
+      <li>
+        <a href="bitacora.html">Bitácora</a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="profile-page" id="contenido">
+
+    <a class="back-link" href="index.html#equipo">
+      ← Volver al equipo
+    </a>
+
+
+    <!-- CABECERA DEL EXPEDIENTE -->
+    <header class="profile-hero">
+
+      <div
+        class="profile-portrait avatar-one"
+        aria-label="Retrato de Rubén Darío Basconcelo"
+        style="
+          background-image: url('img/avatares/avatar01.jpg');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <span aria-hidden="true">RB</span>
+        <b aria-hidden="true">✦</b>
+      </div>
+
+
+      <div>
+
+        <p class="eyebrow">
+          EXPEDIENTE DE CAMPO · N.º 01
+        </p>
+
+        <h1>
+          Rubén Darío<br>
+          <em>Basconcelo</em>
+        </h1>
+
+        <p class="profile-location">
+          ⌖ Argentina
+        </p>
+
+        <p class="profile-role">
+          INVESTIGACIÓN
+          <span>／</span>
+          DESARROLLO
+        </p>
+
+      </div>
+
+
+      <div class="profile-index">
+        ARCHIVO<br>
+        ABIERTO<br>
+        <span>2026</span>
+      </div>
+
+    </header>
+
+
+    <!-- INTRODUCCIÓN -->
+    <section class="profile-intro">
+
+      <span class="quote-mark">“</span>
+
+      <p>
+        Investigar también es aprender a mirar aquello que otros pasan por alto.
+      </p>
+
+    </section>
+
+
+    <!-- DATOS -->
+    <section
+      class="profile-data"
+      aria-label="Intereses y habilidades"
+    >
+
+      <!-- HABILIDADES -->
+      <article class="data-panel">
+
+        <p class="eyebrow">
+          01 / HABILIDADES
+        </p>
+
+        <h2>
+          Herramientas<br>
+          de investigación
+        </h2>
+
+        <ul class="detail-list">
+
+          <li>
+            <span>01</span>
+            Batería / Drummer
+          </li>
+
+          <li>
+            <span>02</span>
+            Creatividad
+          </li>
+
+          <li>
+            <span>03</span>
+            Investigación
+          </li>
+
+          <li>
+            <span>04</span>
+            Trabajo en equipo
+          </li>
+
+        </ul>
+
+      </article>
+
+
+<!-- CINE -->
+<article class="data-panel">
+
+  <p class="eyebrow">
+    02 / CINE
+  </p>
+
+  <h2>
+    Visiones<br>
+    favoritas
+  </h2>
+
+  <div class="media-cards">
+
+    <div class="media-card">
+      <div class="media-card-inner">
+
+        <div class="media-card-front">
+          <img
+            src="img/cine/ruben-club-pelea.jpg"
+            alt="El club de la pelea"
+          >
+          <span>El club de la pelea</span>
+        </div>
+
+        <div class="media-card-back">
+        <span>01 / ARCHIVO</span>
+        <p>El club de la pelea</p>
+        <small>
+            Una mirada sobre la identidad, la violencia
+            y la construcción del individuo.
+        </small>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="media-card">
+      <div class="media-card-inner">
+
+        <div class="media-card-front">
+          <img
+            src="img/cine/ruben-matrix.jpg"
+            alt="Matrix"
+          >
+          <span>Matrix</span>
+        </div>
+
+        <div class="media-card-back">
+        <span>02 / ARCHIVO</span>
+        <p>Matrix</p>
+        <small>
+            Realidad, percepción y la pregunta
+            por aquello que creemos conocer.
+        </small>
+        </div>
+        </div>
+        </div>
+
+
+    <div class="media-card">
+      <div class="media-card-inner">
+
+        <div class="media-card-front">
+          <img
+            src="img/cine/ruben-senor-anillos.jpg"
+            alt="El señor de los anillos"
+          >
+          <span>El señor de los anillos</span>
+        </div>
+
+        <div class="media-card-back">
+        <span>03 / ARCHIVO</span>
+        <p>El señor de los anillos</p>
+        <small>
+            Un viaje de amistad, poder y resistencia
+            frente a una amenaza creciente.
+        </small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</article>
+
+<!-- MÚSICA -->
+<article class="data-panel">
+
+  <p class="eyebrow">
+    03 / MÚSICA
+  </p>
+
+  <h2>
+    Frecuencias<br>
+    preferidas
+  </h2>
+
+  <div class="media-cards">
+
+    <div class="media-card">
+      <div class="media-card-inner">
+
+        <div class="media-card-front">
+          <img
+            src="img/musica/tool.jpg"
+            alt="Tool"
+          >
+          <span>Tool</span>
+        </div>
+
+    <div class="media-card-back">
+    <span>01 / ARCHIVO</span>
+    <p>Tool</p>
+    <small>
+        Sonoridades progresivas, oscuras y experimentales entre el metal y la exploración sonora.
+    </small>
+    </div>
+
+      </div>
+    </div>
+
+
+    <div class="media-card">
+      <div class="media-card-inner">
+
+        <div class="media-card-front">
+          <img
+            src="img/musica/primus.jpg"
+            alt="Primus"
+          >
+          <span>Primus</span>
+        </div>
+
+        <div class="media-card-back">
+        <span>02 / ARCHIVO</span>
+        <p>Primus</p>
+        <small>
+            Una combinación singular de bajo virtuoso, estructuras poco convencionales y humor.
+        </small>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="media-card">
+      <div class="media-card-inner">
+
+        <div class="media-card-front">
+          <img
+            src="img/musica/nine-inch-nails.jpg"
+            alt="Nine Inch Nails"
+          >
+          <span>Nine Inch Nails</span>
+        </div>
+
+        <div class="media-card-back">
+        <span>03 / ARCHIVO</span>
+        <p>Nine Inch Nails</p>
+        <small>
+            Electrónica industrial, intensidad y una estética marcada por la experimentación.
+        </small>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</article>
+    </section>
+
+
+    <!-- INTERACCIÓN JAVASCRIPT -->
+    <section class="profile-interaction">
+
+      <div>
+
+        <p class="eyebrow">
+          04 / INTERACCIÓN JAVASCRIPT
+        </p>
+
+        <h2>
+          El observatorio
+        </h2>
+
+        <p>
+          Buscá una señal en los datos y revelá una nota del archivo.
+        </p>
+
+      </div>
+
+
+      <div class="oracle-console">
+
+        <div
+          class="star-map"
+          aria-hidden="true"
+        >
+          ✧　·　✦<br>
+          　·　✧　·<br>
+          ✦　　·　✧
+        </div>
+
+        <p
+          id="oracle-message"
+          aria-live="polite"
+        >
+          El observatorio permanece en silencio.
+        </p>
+
+        <button
+          class="button button-primary"
+          id="btn-oracle"
+          type="button"
+        >
+          Consultar el archivo
+          <span>↗</span>
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- PAGINACIÓN -->
+    <nav
+      class="profile-pagination"
+      aria-label="Otros expedientes"
+    >
+
+      <a href="index.html">
+        ← Portada
+      </a>
+
+      <a href="integrante2.html">
+        Expediente 02 →
+      </a>
+
+    </nav>
+
   </main>
-  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">◉</span> UMBRAL <span class="brand-divider">/</span> 5B</a><p>TP1 · Desarrollo de Sistemas Web · Front End · 2026</p><a class="back-top" href="#contenido">Volver arriba ↑</a></footer><script src="js/index.js" defer></script><script src="js/integrante1.js" defer></script>
-</body></html>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <a class="brand" href="index.html">
+      <span class="brand-mark">◉</span>
+      UMBRAL
+      <span class="brand-divider">/</span>
+      5B
+    </a>
+
+    <p>
+      TP1 · Desarrollo de Sistemas Web · Front End · 2026
+    </p>
+
+    <a class="back-top" href="#contenido">
+      Volver arriba ↑
+    </a>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="js/index.js" defer></script>
+  <script src="js/integrante1.js" defer></script>
+
+</body>
+
+</html>
