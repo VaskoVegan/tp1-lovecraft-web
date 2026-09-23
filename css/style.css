@@ -251,3 +251,452 @@
   object-fit: cover;
   object-position: center;
 }
+
+/* =========================================================
+   HABILIDADES — TARJETAS INTERACTIVAS
+   ========================================================= */
+
+.skill-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.skill-card {
+  position: relative;
+  min-height: 125px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  background: var(--ink-soft);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.skill-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  background: var(--copper);
+  transition: height 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--copper);
+  background: var(--ink-raised);
+}
+
+.skill-card:hover::before {
+  height: 100%;
+}
+
+.skill-number {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+}
+
+.skill-symbol {
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  color: var(--copper);
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  opacity: 0.65;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.skill-card:hover .skill-symbol {
+  transform: rotate(15deg) scale(1.15);
+  opacity: 1;
+}
+
+.skill-card strong {
+  position: relative;
+  z-index: 1;
+  max-width: 85%;
+  color: var(--paper);
+  font-family: var(--display);
+  font-size: 0.85rem;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+/* MOBILE */
+@media (max-width: 620px) {
+
+  .skill-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    min-height: 105px;
+  }
+
+}
+
+ /* =========================================================
+    PERFIL — ANCHO COMPLETO EN PANTALLAS INTERMEDIAS
+    ========================================================= */
+
+@media (min-width: 621px) and (max-width: 900px) {
+
+  .profile-data {
+    grid-template-columns: 1fr;
+  }
+
+  .data-panel {
+    grid-column: 1;
+  }
+
+}
+
+/* =========================================================
+   PRESENCIA DIGITAL — ENLACES DE PERFIL
+   ========================================================= */
+
+.profile-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border: 1px solid var(--line);
+  color: var(--paper);
+  background: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.profile-links a span {
+  color: var(--copper);
+  transition: transform 0.25s ease;
+}
+
+.profile-links a:hover {
+  color: var(--copper-bright);
+  border-color: var(--copper);
+  background: var(--ink-raised);
+  transform: translateY(-2px);
+}
+
+.profile-links a:hover span {
+  transform: translate(2px, -2px);
+}
+
+/* =========================================================
+   BITÁCORA — LÍNEA DE INVESTIGACIÓN
+   ========================================================= */
+
+.journal-timeline {
+  position: relative;
+}
+
+/* Línea central del registro */
+
+.journal-timeline::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 24px;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--copper),
+    var(--line) 85%,
+    transparent
+  );
+  opacity: 0.7;
+}
+
+/* Cada entrada */
+
+.journal-entry {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 24px;
+  margin-bottom: 54px;
+}
+
+/* Última entrada */
+
+.journal-entry:last-child {
+  margin-bottom: 0;
+}
+
+/* Nodo */
+
+.entry-marker {
+  position: relative;
+  z-index: 2;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--copper);
+  border-radius: 50%;
+
+  background: var(--ink);
+  color: var(--copper);
+
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+
+  box-shadow:
+    0 0 0 6px var(--ink),
+    0 0 0 7px rgba(193, 137, 89, 0.08);
+
+  transition:
+    color 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Cuerpo */
+
+.entry-body {
+  position: relative;
+
+  padding: 28px 30px;
+
+  border: 1px solid var(--line);
+  background: rgba(27, 36, 30, 0.55);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+/* Pequeño conector entre nodo y contenido */
+
+.entry-body::before {
+  content: "";
+
+  position: absolute;
+  top: 23px;
+  left: -25px;
+
+  width: 25px;
+  height: 1px;
+
+  background: var(--line);
+
+  transition: background 0.3s ease;
+}
+
+/* Esquina decorativa */
+
+.entry-body::after {
+  content: "";
+
+  position: absolute;
+  top: -1px;
+  right: -1px;
+
+  width: 28px;
+  height: 28px;
+
+  border-top: 1px solid var(--copper);
+  border-right: 1px solid var(--copper);
+
+  opacity: 0.55;
+}
+
+/* Hover */
+
+.journal-entry:hover .entry-marker {
+  color: var(--paper);
+  background: var(--copper);
+  transform: scale(1.08);
+
+  box-shadow:
+    0 0 0 6px var(--ink),
+    0 0 0 8px rgba(193, 137, 89, 0.16);
+}
+
+.journal-entry:hover .entry-body {
+  transform: translateX(5px);
+  border-color: rgba(193, 137, 89, 0.4);
+  background: rgba(27, 36, 30, 0.8);
+}
+
+.journal-entry:hover .entry-body::before {
+  background: var(--copper);
+}
+
+
+/* =========================================================
+   BITÁCORA — ENTRADA PENDIENTE
+   ========================================================= */
+
+.journal-entry.journal-open .entry-marker {
+  border-style: dashed;
+  color: var(--paper-dim);
+}
+
+.journal-entry.journal-open .entry-body {
+  border-style: dashed;
+  background: rgba(27, 36, 30, 0.35);
+}
+
+.journal-entry.journal-open .entry-body::after {
+  border-color: var(--paper-dim);
+  opacity: 0.35;
+}
+
+
+/* =========================================================
+   BITÁCORA — NOTAS DE CAMPO
+   ========================================================= */
+
+.entry-note {
+  position: relative;
+
+  margin-top: 24px;
+  padding: 18px 20px;
+
+  border-left: 2px solid var(--copper);
+
+  background: rgba(16, 21, 18, 0.55);
+}
+
+.entry-note strong {
+  display: block;
+  margin-bottom: 10px;
+
+  color: var(--copper-bright);
+
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.entry-note ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.entry-note li {
+  margin-bottom: 7px;
+}
+
+.entry-note li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   BITÁCORA — RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 620px) {
+
+  .journal-timeline::before {
+    left: 18px;
+  }
+
+  .journal-entry {
+    grid-template-columns: 38px 1fr;
+    gap: 16px;
+    margin-bottom: 38px;
+  }
+
+  .entry-marker {
+    width: 36px;
+    height: 36px;
+
+    font-size: 0.58rem;
+
+    box-shadow:
+      0 0 0 5px var(--ink),
+      0 0 0 6px rgba(193, 137, 89, 0.08);
+  }
+
+  .entry-body {
+    padding: 22px 18px;
+  }
+
+  .entry-body::before {
+    left: -17px;
+    width: 17px;
+  }
+
+  .journal-entry:hover .entry-body {
+    transform: translateX(2px);
+  }
+
+}
+
+/* =========================================================
+   BITÁCORA — APARICIÓN AL HACER SCROLL
+   ========================================================= */
+
+.journal-entry {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.journal-entry.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respeta la configuración de accesibilidad del usuario */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .journal-entry {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+}
+
+/* Ajuste de legibilidad en tarjetas de habilidades */
+
+.skill-card strong {
+  font-size: 0.95rem;
+}

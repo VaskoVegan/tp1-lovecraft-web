@@ -20,6 +20,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const value = document.querySelector('#sanity-value');
   const message = document.querySelector('#sanity-text');
   const progress = document.querySelector('.sanity-track');
+
+  // =========================================================
+  // BITÁCORA — APARICIÓN AL HACER SCROLL
+  // =========================================================
+
+  const journalEntries = document.querySelectorAll('.journal-entry');
+
+  if (journalEntries.length) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.15
+      }
+    );
+
+    journalEntries.forEach((entry) => observer.observe(entry));
+  }
+
   if (!button || !bar || !value || !message || !progress) return;
 
   const signals = [
