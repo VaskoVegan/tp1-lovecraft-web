@@ -41,9 +41,15 @@
     <main class="profile-page" id="contenido">
       <a class="back-link" href="index.html#equipo">← Volver al equipo</a>
       <header class="profile-hero">
-        <div class="profile-portrait avatar-four" aria-hidden="true">
-          <span>AM</span><b>✧</b>
-        </div>
+        <div
+          class="profile-portrait avatar-four"
+          aria-label="Retrato de Alvaro Mamani"
+          style="
+            background-image: url(&quot;img/avatares/Avatar04.jpeg&quot;);
+            background-size: cover;
+            background-position: center;
+          "
+        ></div>
         <div>
           <p class="eyebrow">EXPEDIENTE DE CAMPO · N.º 04</p>
           <h1>Alvaro Gabriel<br /><em>Mamani</em></h1>
@@ -65,125 +71,198 @@
 
       <section class="profile-intro">
         <span class="quote-mark">“</span>
-        <p>
-          Cada proyecto es una oportunidad de aprender y enseñar: mi objetivo es
-          que el conocimiento fluya tan bien como el código.
-        </p>
+        <p>Mi objetivo es que el conocimiento fluya tan bien como el código.</p>
+        <span class="quote-mark">”</span>
+        <div class="profile-links">
+          <a
+            href="https://github.com/alvarogmam"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub <span>↗</span>
+          </a>
+
+          <a
+            href="https://alvaromamani-portfolio.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Portfolio <span>↗</span>
+          </a>
+        </div>
       </section>
 
       <section class="profile-data" aria-label="Intereses y habilidades">
         <article class="data-panel">
           <p class="eyebrow">01 / HABILIDADES</p>
           <h2>Herramientas<br />de investigación</h2>
-          <ul class="detail-list">
-            <li>
-              <span>01</span> Pensamiento crítico y resolución de problemas
-            </li>
-            <li><span>02</span> Adaptabilidad</li>
-            <li><span>03</span> Gestion de tiempo</li>
-            <li><span>04</span> Creatividad aplicada</li>
-            <li><span>05</span> Empatia profesional</li>
-          </ul>
-        </article>
-        <article class="data-panel media-panel">
-          <p class="eyebrow">02 / CINE</p>
-          <h2>Visiones<br />favoritas</h2>
-          <div class="media-list">
-            <a
-              class="media-item"
-              href="https://www.imdb.com/es-es/title/tt1568911/?ref_=nv_sr_srsg_6_tt_5_nm_1_in_0_q_horse"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Buscar War Horse en IMDb"
-              ><span
-                class="media-art film-art film-fight"
-                role="img"
-                aria-label="Arte original inspirado en cine noir"
-                ><b>WAR<br />HORSE</b></span
-              ><span class="media-copy"
-                ><strong>War Horse</strong><small>Ver en IMDb ↗</small></span
-              ></a
-            ><a
-              class="media-item"
-              href="https://www.imdb.com/es-es/title/tt0213149/?ref_=nv_sr_srsg_6_tt_5_nm_3_in_0_q_pearl"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Buscar Pearl Harbor en IMDb"
-              ><span
-                class="media-art film-art film-matrix"
-                role="img"
-                aria-label="Arte original inspirado en ciencia ficción"
-                ><b>PEARL HARBOR</b></span
-              ><span class="media-copy"
-                ><strong>Pearl Harbor</strong><small>Ver en IMDb ↗</small></span
-              ></a
-            ><a
-              class="media-item"
-              href="https://www.imdb.com/es-es/title/tt6924650/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_midw"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Buscar Midway en IMDb"
-              ><span
-                class="media-art film-art film-rings"
-                role="img"
-                aria-label="Arte original inspirado en fantasía épica"
-                ><b>MIDWAY</b></span
-              ><span class="media-copy"
-                ><strong>Midway</strong><small>Ver en IMDb ↗</small></span
-              ></a
-            >
+
+          <div class="skill-cards">
+            <div class="skill-card">
+              <span class="skill-number">01</span>
+              <span class="skill-symbol">◈</span>
+              <strong>Adaptabilidad</strong>
+            </div>
+
+            <div class="skill-card">
+              <span class="skill-number">02</span>
+              <span class="skill-symbol">⌬</span>
+              <strong>Gestion de tiempo</strong>
+            </div>
+
+            <div class="skill-card">
+              <span class="skill-number">03</span>
+              <span class="skill-symbol">⌖</span>
+              <strong>Creatividad aplicada</strong>
+            </div>
+
+            <div class="skill-card">
+              <span class="skill-number">04</span>
+              <span class="skill-symbol">✦</span>
+              <strong>Empatia profesional</strong>
+            </div>
           </div>
         </article>
-        <article class="data-panel media-panel">
+        <article class="data-panel">
+          <p class="eyebrow">02 / CINE</p>
+          <h2>Visiones<br />favoritas</h2>
+
+          <div class="media-cards">
+            <div class="media-card">
+              <div class="media-card-inner">
+                <div class="media-card-front">
+                  <img
+                    src="img/cine/alvaro-war-horse.jpg"
+                    alt="Mulholland Drive"
+                  />
+                  <span>War Horse</span>
+                </div>
+
+                <div class="media-card-back">
+                  <span>01 / ARCHIVO</span>
+                  <p>War Horse</p>
+                  <small>
+                    Después de ser apartado de su querido dueño, un famoso
+                    caballo cambia la vida de quienes lo conocen durante la
+                    Primera Guerra Mundial.
+                  </small>
+                </div>
+              </div>
+            </div>
+
+            <div class="media-card">
+              <div class="media-card-inner">
+                <div class="media-card-front">
+                  <img
+                    src="img/cine/alvaro-hombres_de_honor.jpg"
+                    alt="Mulholland Drive"
+                  />
+                  <span>Men of Honor</span>
+                </div>
+
+                <div class="media-card-back">
+                  <span>02 / ARCHIVO</span>
+                  <p>Men of Honor</p>
+                  <small>
+                    Un hombre que no dejó que nada se interpusiera en el camino
+                    de su sueño.
+                  </small>
+                </div>
+              </div>
+            </div>
+
+            <div class="media-card">
+              <div class="media-card-inner">
+                <div class="media-card-front">
+                  <img
+                    src="img/cine/alvaro-pearl-harbor.jpeg"
+                    alt="Mulholland Drive"
+                  />
+                  <span>Pearl Harbor</span>
+                </div>
+
+                <div class="media-card-back">
+                  <span>03 / ARCHIVO</span>
+                  <p>Pearl Harbor</p>
+                  <small>
+                    Dos pilotos que sobrevivieron al bombardeo de Pearl Harbor,
+                    amigos desde la infancia y luego rivales por el amor de una
+                    mujer.
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="data-panel">
           <p class="eyebrow">03 / MÚSICA</p>
           <h2>Frecuencias<br />preferidas</h2>
-          <div class="media-list">
-            <a
-              class="media-item"
-              href="https://open.spotify.com/intl-es/album/1inJBfnZWe33KcXl6TNaXV?si=EjHRJpdxSzOiaYi0VVNa4w"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Buscar Guitarricadelafuente en Spotify"
-              ><span
-                class="media-art music-art music-tool"
-                role="img"
-                aria-label="Arte original de música progresiva"
-                ><b>Guitarricadelafuente</b></span
-              ><span class="media-copy"
-                ><strong>Spanish Leather</strong
-                ><small>Escuchar en Spotify ↗</small></span
-              ></a
-            ><a
-              class="media-item"
-              href="https://open.spotify.com/intl-es/album/6KlfEUNf3Hp9I0j8HgbnBG?si=BI-4TLUTRr-PlnbUuK6YEw"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Buscar Dasgotti en Spotify"
-              ><span
-                class="media-art music-art music-primus"
-                role="img"
-                aria-label="Arte original de rock alternativo"
-                ><b>Dasgotti</b></span
-              ><span class="media-copy"
-                ><strong>Cuando nadie mira</strong
-                ><small>Escuchar en Spotify ↗</small></span
-              ></a
-            ><a
-              class="media-item"
-              href="https://open.spotify.com/intl-es/album/2VHpXm9h05eiyteYReWkK8?si=HrOK6Gp6SrKd04GOSnuSaw"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Buscar Ultimo en Spotify"
-              ><span
-                class="media-art music-art film-inception"
-                role="img"
-                aria-label="Arte original de rock industrial"
-                ><b>Ultimo</b></span
-              ><span class="media-copy"
-                ><strong>Altrove</strong
-                ><small>Escuchar en Spotify ↗</small></span
-              ></a
-            >
+
+          <div class="media-cards">
+            <div class="media-card">
+              <div class="media-card-inner">
+                <div class="media-card-front">
+                  <img
+                    src="img/musica/ultimo-iive.jpg"
+                    alt="Ultimo live stadium"
+                  />
+                  <span>Ultimo</span>
+                </div>
+
+                <div class="media-card-back">
+                  <span>01 / ARCHIVO</span>
+                  <p>Ultimmo</p>
+                  <small>
+                    Ultimo Live Stadi 2024 es el primer álbum en vivo del
+                    cantautor italiano Ultimo.
+                  </small>
+                </div>
+              </div>
+            </div>
+
+            <div class="media-card">
+              <div class="media-card-inner">
+                <div class="media-card-front">
+                  <img
+                    src="img/musica/Guitarricadelafuente.jpg"
+                    alt="Guitarricadelafuente-spanish-leather"
+                  />
+                  <span>Guitarricadelafuente</span>
+                </div>
+
+                <div class="media-card-back">
+                  <span>02 / ARCHIVO</span>
+                  <p>Guitarricadelafuente</p>
+                  <small>
+                    Spanish leather es el segundo álbum de estudio del español
+                    Guitarricadelafuente. Fue publicado el 16 de mayo de 2025 a
+                    través de Sony Music.
+                  </small>
+                </div>
+              </div>
+            </div>
+
+            <div class="media-card">
+              <div class="media-card-inner">
+                <div class="media-card-front">
+                  <img
+                    src="img/musica/alta-suciedad.jpg"
+                    alt="Portada de disco alta suciedad de Andres Calamaro"
+                  />
+                  <span>Andrés Calamaro</span>
+                </div>
+
+                <div class="media-card-back">
+                  <span>03 / ARCHIVO</span>
+                  <p>Andrés Calamaro</p>
+                  <small>
+                    Alta suciedad es el nombre del quinto álbum de estudio
+                    grabado por el músico argentino Andrés Calamaro.
+                  </small>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
       </section>
@@ -201,6 +280,52 @@
             Invocar el portal
           </button>
         </div>
+      </section>
+
+      <!-- TRANSMISIÓN -->
+      <section class="profile-contact">
+        <div>
+          <p class="eyebrow">05 / TRANSMISIÓN</p>
+
+          <h2>
+            Contactar<br />
+            al investigador
+          </h2>
+
+          <p>
+            Dejá un mensaje en el expediente de Alvaro. La transmisión será
+            registrada en el archivo.
+          </p>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <label for="contact-name"> Nombre </label>
+
+          <input
+            type="text"
+            id="contact-name"
+            name="name"
+            placeholder="Tu nombre"
+            required
+          />
+
+          <label for="contact-message"> Mensaje </label>
+
+          <textarea
+            id="contact-message"
+            name="message"
+            rows="5"
+            placeholder="Escribí tu mensaje..."
+            required
+          ></textarea>
+
+          <button class="button button-primary" type="submit">
+            Transmitir mensaje
+            <span>↗</span>
+          </button>
+
+          <p class="contact-status" id="contact-status" aria-live="polite"></p>
+        </form>
       </section>
 
       <nav class="profile-pagination" aria-label="Otros expedientes">
