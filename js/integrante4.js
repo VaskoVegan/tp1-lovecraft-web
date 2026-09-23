@@ -5,7 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!button || !portal || !message) return;
 
   let summonCount = 0;
-  const colors = ["#6f00ff", "#0ff", "#ff006f", "#333"];
+  const colors = [
+    "#6f00ffed",
+    "rgba(0, 255, 255, 0.95)",
+    "#ff006feb",
+    "#1e1e1e",
+  ];
   const whispers = [
     "El vacío responde... un murmullo ancestral.",
     "Las estrellas tiemblan, el ritual avanza.",
