@@ -1,3 +1,87 @@
-<!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101512"><title>Expediente 03 en pausa — Umbral 5B</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=Marcellus&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
-<body><a class="skip-link" href="#contenido">Saltar al contenido</a><nav class="navbar" aria-label="Navegación principal"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">◉</span> UMBRAL <span class="brand-divider">/</span> 5B</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">☰</button><ul class="nav-links" id="nav-links"><li><a href="index.html">Inicio</a></li><li><a href="index.html#equipo">El equipo</a></li><li><a href="bitacora.html">Bitácora</a></li></ul></nav><main class="profile-page" id="contenido"><a class="back-link" href="index.html#equipo">← Volver al equipo</a><header class="journal-hero"><p class="eyebrow">EXPEDIENTE DE CAMPO · N.º 03</p><h1>Archivo<br><em>en pausa</em></h1><p>Este espacio se completará cuando se confirme la incorporación de la persona integrante y se reciban sus datos para el perfil.</p><a class="button button-primary" href="bitacora.html">Consultar la bitácora <span>→</span></a></header></main><footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">◉</span> UMBRAL <span class="brand-divider">/</span> 5B</a><p>TP1 · Desarrollo de Sistemas Web · Front End · 2026</p><a class="back-top" href="#contenido">Volver arriba ↑</a></footer><script src="js/index.js" defer></script></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expediente: Juanse | Grupo 5B</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación Global -->
+    <nav class="navbar">
+        <div class="nav-logo">Culto_G5B</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="bitacora.html">Bitácora</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor del Perfil -->
+    <main class="container profile-container">
+        
+        <!-- Botón de Navegación Interna -->
+        <div class="back-nav">
+            <a href="index.html" class="btn-back">← Volver a la Portada</a>
+        </div>
+
+        <section class="profile-card">
+            <!-- 1. Foto / Avatar / Mascota -->
+            <div class="profile-avatar" id="juanse-avatar">🐙</div>
+            
+            <!-- 2, 3 y 4. Información básica -->
+            <h1 class="ancient-title">Juanse</h1>
+            <p class="profile-meta"><strong>Ciudad:</strong> Arkham (Placeholder) | <strong>Edad:</strong> 37 años (Placeholder)</p>
+
+            <div class="profile-details-grid">
+                <!-- 5. Cuatro habilidades -->
+                <div class="details-block">
+                    <h3>Habilidades de Investigación</h3>
+                    <ul class="skills-list">
+                        <li>Manejo fluido de GitHub</li>
+                        <li>Maquetación con HTML y CSS</li>
+                        <li>Organización de tareas</li>
+                        <li>Buenas prácticas en programacion con Javascript</li>
+                    </ul>
+                </div>
+
+                <!-- 6. Tres películas favoritas -->
+                <div class="details-block">
+                    <h3>Filmografía Prohibida (Películas)</h3>
+                    <ol>
+                        <li>Volver al Futuro II (1989)</li>
+                        <li>El Dia de la Bestia (1995)</li>
+                        <li>The Matrix (1999)</li>
+                    </ol>
+                </div>
+
+                <!-- 7. Tres discos favoritos -->
+                <div class="details-block">
+                    <h3>Sinfonías Abisales (Discos)</h3>
+                    <ul>
+                        <li>Fear Factory - Demanufacture</li>
+                        <li>Type 0 Negative - October Rust</li>
+                        <li>Running Wild - Black Hand Inn</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 8. Interacción Dinámica Propia (JavaScript) -->
+            <div class="profile-interactive-box">
+                <h3>El Portal de R'lyeh</h3>
+                <p>Presioná el sello para abrir una grieta dimensional en este perfil.</p>
+                <button id="btn-portal-vasko">Invocar Portal</button>
+                <div id="portal-display" class="hidden-lore"></div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Desarrollo de Sistemas Web | Grupo 5B</p>
+    </footer>
+
+    <!-- Script específico del perfil de Vasko -->
+    <script src="js/integrante3.js"></script>
+</body>
+</html>
