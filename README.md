@@ -23,7 +23,7 @@ El sitio reúne una portada general, perfiles individuales, navegación interna,
 - Participación en pruebas y testing.
 - Participación en README y Bitácora.
 
-**GitHub:** VaskoVegan
+**GitHub:** [Likn al perfil de GitUb](https://github.com/VaskoVegan)
 
 ### 02 · Sergio David Pasini Cabello
 
@@ -37,7 +37,7 @@ El sitio reúne una portada general, perfiles individuales, navegación interna,
 - Desarrollo de su interacción JavaScript.
 - Participación en pruebas responsive.
 
-**GitHub:** cspasini
+**GitHub:** [Likn al perfil de GitUb](https://github.com/cspasini)
 
 ### 03 · Juan Sebastián Páez Horbat
 
@@ -51,7 +51,7 @@ El sitio reúne una portada general, perfiles individuales, navegación interna,
 - Revisión de errores de consola.
 - Participación en pruebas.
 
-**GitHub:** MichiBBQ
+**GitHub:** [Likn al perfil de GitUb](https://github.com/MichiBBQ)
 
 ### 04 · Alvaro Gabriel Mamani
 
@@ -65,7 +65,7 @@ El sitio reúne una portada general, perfiles individuales, navegación interna,
 - Participación en README.
 - Participación en pruebas finales.
 
-**GitHub:** alvarogmam
+**GitHub:** [Likn al perfil de GitUb](https://github.com/alvarogmam)
 
 > Aunque cada integrante tuvo una responsabilidad principal, las decisiones y revisiones importantes fueron realizadas de manera colaborativa.
 
@@ -224,6 +224,106 @@ La secuencia evoluciona de la siguiente manera:
 
 La interacción fue diseñada para que JavaScript no sea solamente un requisito técnico, sino que forme parte de la narrativa del sitio.
 
+**Código Javascript:**
+
+```javascript
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.querySelector("#btn-investigate");
+  const bar = document.querySelector("#sanity-bar");
+  const value = document.querySelector("#sanity-value");
+  const message = document.querySelector("#sanity-text");
+  const progress = document.querySelector(".sanity-track");
+
+  const journalEntries = document.querySelectorAll(".journal-entry");
+
+  if (journalEntries.length) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+      },
+    );
+
+    journalEntries.forEach((entry) => observer.observe(entry));
+  }
+
+  if (!button || !bar || !value || !message || !progress) return;
+
+  const signals = [
+    "La señal es débil. Por ahora, todo está en calma.",
+    "Un murmullo cruza el archivo. La tinta parece moverse.",
+    "Las coordenadas ya no coinciden con ningún mapa conocido.",
+    "Algo respondió desde el otro lado. Conviene mantener la calma.",
+    "La señal se ha apagado. El expediente vuelve a quedar en silencio.",
+  ];
+  let sanity = 100;
+  let collapsing = false;
+
+  button.addEventListener("click", () => {
+    if (collapsing) return;
+
+    sanity = Math.max(0, sanity - 20);
+
+    bar.style.width = `${sanity}%`;
+    value.textContent = `${sanity}%`;
+    progress.setAttribute("aria-valuenow", String(sanity));
+
+    if (sanity > 0) {
+      message.textContent = signals[(100 - sanity) / 20];
+
+      if (sanity <= 40) {
+        progress.closest(".signal-panel").classList.add("signal-corrupted");
+      }
+
+      return;
+    }
+
+    /* =======================================================
+     COLAPSO — LA SEÑAL RESPONDE
+     ======================================================= */
+
+    collapsing = true;
+
+    const panel = progress.closest(".signal-panel");
+
+    panel.classList.remove("signal-corrupted");
+    panel.classList.add("signal-collapse");
+
+    value.textContent = "Ø";
+    message.textContent = "NO ERA UNA SEÑAL. ERA UNA RESPUESTA.";
+    button.disabled = true;
+    button.textContent = "SEÑAL PERDIDA";
+
+    /* =======================================================
+     REINICIO DEL EXPEDIENTE
+     ======================================================= */
+
+    setTimeout(() => {
+      panel.classList.remove("signal-collapse");
+
+      sanity = 100;
+      collapsing = false;
+
+      bar.style.width = "100%";
+      value.textContent = "100%";
+      message.textContent = signals[0];
+
+      progress.setAttribute("aria-valuenow", "100");
+
+      button.disabled = false;
+      button.innerHTML = "Investigar la señal <span>↗</span>";
+    }, 2200);
+  });
+});
+```
+
 **Captura:**
 ![Captura de interaccion javascript- muestra la cordura en 100%](/img/capturas/capt-1.png)
 ![Captura de interaccion javascript- muestra la cordura en 40%](/img/capturas/capt-2.png)
@@ -234,6 +334,49 @@ La interacción fue diseñada para que JavaScript no sea solamente un requisito 
 ## Perfil — Rubén Darío Basconcelo
 
 La página de Rubén incorpora una interacción JavaScript propia "El observatorio" vinculada con la presentación de su perfil.
+
+**Código Javascript:**
+
+```javascript
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.querySelector("#btn-oracle");
+  const message = document.querySelector("#oracle-message");
+  const consolePanel = document.querySelector(".oracle-console");
+
+  if (!button || !message || !consolePanel) return;
+
+  let consultationCount = 0;
+
+  const notes = [
+    "El observatorio permanece en silencio.",
+    "Primer registro: una señal débil aparece entre los datos.",
+    "Segundo registro: la señal responde al investigador.",
+    "Tercer registro: algo está observando desde el otro lado.",
+    "El registro comienza a mostrar datos que no deberían existir.",
+    "La señal cambia de frecuencia. El archivo no reconoce el patrón.",
+    "La observación ha sido devuelta. Ahora alguien está mirando.",
+    "La señal desaparece. El observatorio vuelve al silencio.",
+  ];
+
+  button.addEventListener("click", () => {
+    consultationCount += 1;
+
+    consolePanel.classList.remove("is-active");
+
+    void consolePanel.offsetWidth;
+
+    consolePanel.classList.add("is-active");
+
+    const index = consultationCount % notes.length;
+
+    message.textContent = notes[index];
+
+    if (consultationCount >= notes.length - 1) {
+      button.innerHTML = "Consultar nuevamente <span>↗</span>";
+    }
+  });
+});
+```
 
 **Descripción:**
 
@@ -252,6 +395,47 @@ La página de Rubén incorpora una interacción JavaScript propia "El observator
 
 La página de Sergio incorpora una interacción JavaScript propia " El observatorio 2" vinculada con la presentación de su perfil.
 
+**Código Javascript:**
+
+```javascript
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.querySelector("#btn-oracle");
+  const map = document.querySelector(".star-map");
+  const message = document.querySelector("#oracle-message");
+
+  if (!button || !map || !message) return;
+
+  const observations = [
+    "La primera nota del archivo habla de paciencia y método.",
+    "Los datos forman un patrón cuando se los observa con atención.",
+    "El mapa no predice el futuro: ayuda a formular mejores preguntas.",
+    "La señal cambia, pero el trabajo en equipo mantiene el rumbo.",
+    "El patrón se vuelve más claro. La observación empieza a generar nuevas preguntas.",
+    "Registro final: los datos no entregan respuestas. Entregan mejores formas de buscarlas.",
+  ];
+
+  let observationIndex = 0;
+
+  button.addEventListener("click", () => {
+    message.textContent = observations[observationIndex];
+
+    observationIndex = (observationIndex + 1) % observations.length;
+
+    map.classList.remove("is-active");
+
+    void map.offsetWidth;
+
+    map.classList.add("is-active");
+
+    if (observationIndex === 0) {
+      button.innerHTML = "Reiniciar observación <span>↻</span>";
+    } else {
+      button.innerHTML = "Analizar otra señal <span>↗</span>";
+    }
+  });
+});
+```
+
 **Descripción:**
 
 1. Al hacer click en el botón, se activa una animación en el panel e inicia un disparador de observaciones narrativas.
@@ -264,9 +448,42 @@ La página de Sergio incorpora una interacción JavaScript propia " El observato
 
 ---
 
-## Perfil — Integrante 03
+## Perfil — Juan Sebastián Páez Horbat
 
 El perfil incorpora una interacción JavaScript propia "Buceo en el vacio".
+
+**Código Javascript:**
+
+```javascript
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.querySelector("#btn-oracle");
+  const message = document.querySelector("#oracle-message");
+  const consolePanel = document.querySelector(".oracle-console");
+  if (!button || !message || !consolePanel) return;
+  let consultationCount = 0;
+  const notes = [
+    "El vacío permanece inmóvil.",
+    "Mira con atención a la nada misma.",
+    "Los límites entre pensamiento y espacio comienzan a desdibujarse.",
+    "Empápate en los efluvios de tu mente, mientras tus sentidos no tienen de dónde agarrarse.",
+    "Déjate llevar por la oscuridad completa, indivisible e inconceptuable.",
+    "El vacío mismo te devuelve la mirada de forma penetrante.",
+    "En este momento eres un habitante de un mundo abstracto e indescriptible para las palabras mortales.",
+    "La inmensidad vuelve a quedar en silencio.",
+  ];
+  button.addEventListener("click", () => {
+    consultationCount++;
+    consolePanel.classList.remove("is-active");
+    void consolePanel.offsetWidth;
+    consolePanel.classList.add("is-active");
+    const index = consultationCount % notes.length;
+    message.textContent = notes[index];
+    if (consultationCount >= notes.length - 1) {
+      button.innerHTML = "Sumergirse nuevamente <span>↗</span>";
+    }
+  });
+});
+```
 
 **Descripción:**
 
@@ -280,9 +497,46 @@ El perfil incorpora una interacción JavaScript propia "Buceo en el vacio".
 
 ---
 
-## Perfil — Integrante 04
+## Perfil — Alvaro Mamani
 
 El perfil incorpora una interacción JavaScript propia, "Susurros del vacio cosmico".
+
+**Código Javascript:**
+
+```javascript
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.querySelector("#btn-ritual");
+  const portal = document.querySelector("#cosmic-portal");
+  const message = document.querySelector("#portal-message");
+  if (!button || !portal || !message) return;
+
+  let summonCount = 0;
+  const colors = [
+    "#6f00ffed",
+    "rgba(0, 255, 255, 0.95)",
+    "#ff006feb",
+    "#1e1e1e",
+  ];
+  const whispers = [
+    "El vacío responde... un murmullo ancestral.",
+    "Las estrellas tiemblan, el ritual avanza.",
+    "Un eco interdimensional se abre paso.",
+    "El abismo observa y sonríe en silencio.",
+  ];
+
+  button.addEventListener("click", () => {
+    summonCount += 1;
+    portal.classList.remove("is-awakened");
+    void portal.offsetWidth; // reinicia animación
+    portal.classList.add("is-awakened");
+
+    const index = (summonCount - 1) % colors.length;
+    portal.style.backgroundColor = colors[index];
+    message.textContent =
+      whispers[Math.min(summonCount - 1, whispers.length - 1)];
+  });
+});
+```
 
 **Descripción:**
 
@@ -394,3 +648,27 @@ La IA también se utilizó como herramienta de discusión para evaluar alternati
 ## Código
 
 La IA fue utilizada como apoyo, pero el código incorporado al proyecto fue revisado, adaptado
+
+## URL Publicación en Vercel
+
+[Link al sitio pulicado en Vercel](https://tp1-lovecraft-web.vercel.app/)
+
+## Evolución del sitio
+
+El sitio puede crecer en tres direcciones: estética narrativa, interactividad funcional y robustez técnica.
+
+**Estética y narrativa**
+
+- Incorporar más animaciones: como efectos de particulas, transiciones suaves y fondos dinámicos que refuercen la estetica lovecaftiana;
+- Modo oscuro/Luz: dar al usuario la opción de cambiar la atmósfera del sitio.
+
+**Funcionalidad interactiva**
+
+- Incorporación de minijuegos narrativos, para que el usuario tenga mas interacción;
+- Integración multimedia, reproducir fragmentos de audio o música ambiental al activar rituales o mapas estelares.
+
+**Escalabilidad técnica**
+
+- Framework moderno, migrar a React para mejorar los componentes interactivos;
+- API de datos, cargar la información desde un archivo JSON o una base de datos, facilitando la actualización;
+- Optimización de rendimiento, reducir peso de imágenes y mejorar accecibilidad.
