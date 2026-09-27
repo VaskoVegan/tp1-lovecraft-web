@@ -23,7 +23,7 @@ El sitio reúne una portada general, perfiles individuales, navegación interna,
 - Participación en pruebas y testing.
 - Participación en README y Bitácora.
 
-**GitHub:** [Likn al perfil de GitHUb](https://github.com/VaskoVegan)
+**GitHub:** [Link al perfil de GitHub](https://github.com/VaskoVegan)
 
 ### 02 · Sergio David Pasini Cabello
 
@@ -37,7 +37,7 @@ El sitio reúne una portada general, perfiles individuales, navegación interna,
 - Desarrollo de su interacción JavaScript.
 - Participación en pruebas responsive.
 
-**GitHub:** [Likn al perfil de GitHUb](https://github.com/cspasini)
+**GitHub:** [Link al perfil de GitHub](https://github.com/cspasini)
 
 ### 03 · Juan Sebastián Páez Horbat
 
@@ -51,7 +51,7 @@ El sitio reúne una portada general, perfiles individuales, navegación interna,
 - Revisión de errores de consola.
 - Participación en pruebas.
 
-**GitHub:** [Likn al perfil de GitHUb](https://github.com/MichiBBQ)
+**GitHub:** [Link al perfil de GitHub](https://github.com/MichiBBQ)
 
 ### 04 · Alvaro Gabriel Mamani
 
@@ -65,7 +65,7 @@ El sitio reúne una portada general, perfiles individuales, navegación interna,
 - Participación en README.
 - Participación en pruebas finales.
 
-**GitHub:** [Likn al perfil de GitHUb](https://github.com/alvarogmam)
+**GitHub:** [Link al perfil de GitHub](https://github.com/alvarogmam)
 
 > Aunque cada integrante tuvo una responsabilidad principal, las decisiones y revisiones importantes fueron realizadas de manera colaborativa.
 
