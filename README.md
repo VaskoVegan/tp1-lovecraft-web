@@ -10,7 +10,7 @@ El sitio reúne una portada general, perfiles individuales, navegación interna,
 
 ---
 
-## 👁️ Integrantes
+## Integrantes
 
 ### 01 · Rubén Darío Basconcelo
 
@@ -39,7 +39,7 @@ El sitio reúne una portada general, perfiles individuales, navegación interna,
 
 **GitHub:** cspasini
 
-### 03 · [NOMBRE DEL INTEGRANTE]
+### 03 · Juan Sebastián Páez Horbat
 
 **Responsabilidad principal:** JavaScript e interactividad
 
@@ -51,9 +51,9 @@ El sitio reúne una portada general, perfiles individuales, navegación interna,
 - Revisión de errores de consola.
 - Participación en pruebas.
 
-**GitHub:** [COMPLETAR]
+**GitHub:** MichiBBQ
 
-### 04 · [NOMBRE DEL INTEGRANTE]
+### 04 · Alvaro Gabriel Mamani
 
 **Responsabilidad principal:** Documentación e integración
 
@@ -65,13 +65,13 @@ El sitio reúne una portada general, perfiles individuales, navegación interna,
 - Participación en README.
 - Participación en pruebas finales.
 
-**GitHub:** [COMPLETAR]
+**GitHub:** alvarogmam
 
 > Aunque cada integrante tuvo una responsabilidad principal, las decisiones y revisiones importantes fueron realizadas de manera colaborativa.
 
 ---
 
-# 🎯 Propósito del proyecto
+# Propósito del proyecto
 
 El objetivo fue construir un sitio web grupal que cumpliera con los requisitos técnicos del TP1 y, al mismo tiempo, desarrollara una identidad visual propia.
 
@@ -90,7 +90,7 @@ La intención no fue reproducir literalmente una estética de Lovecraft, sino ut
 
 ---
 
-# 🛠️ Tecnologías utilizadas
+# Tecnologías utilizadas
 
 - **HTML5** — estructura y contenido.
 - **CSS3** — diseño visual, responsive design, animaciones y componentes.
@@ -103,7 +103,7 @@ No se utilizaron frameworks para la implementación principal. El sitio fue desa
 
 ---
 
-# 📁 Estructura del proyecto
+# Estructura del proyecto
 
 ```text
 tp1-lovecraft-web/
@@ -131,7 +131,7 @@ La estructura mantiene los archivos HTML principales en la raíz, los estilos y 
 
 ---
 
-# 🎨 Guía de estilos
+# Guía de estilos
 
 ## Paleta
 
@@ -170,7 +170,7 @@ La iconografía se mantiene deliberadamente simple para no competir con la infor
 
 ---
 
-# 🧭 Navegación
+# Navegación
 
 El sitio cuenta con un menú principal accesible desde las distintas páginas:
 
@@ -184,7 +184,7 @@ La navegación fue revisada para evitar enlaces rotos y permitir recorrer el sit
 
 ---
 
-# 👤 Perfiles individuales
+# Perfiles individuales
 
 Cada integrante cuenta con una página individual que presenta:
 
@@ -202,7 +202,7 @@ Los perfiles utilizan una estructura visual compartida para mantener la identida
 
 ---
 
-# ⚡ Interactividad JavaScript
+# Interactividad JavaScript
 
 El proyecto incorpora JavaScript tanto en la portada como en los perfiles individuales.
 
@@ -225,59 +225,79 @@ La secuencia evoluciona de la siguiente manera:
 La interacción fue diseñada para que JavaScript no sea solamente un requisito técnico, sino que forme parte de la narrativa del sitio.
 
 **Captura:**
-`[INSERTAR CAPTURA DE LA INTERACCIÓN DE LA PORTADA]`
+![Captura de interaccion javascript- muestra la cordura en 100%](/img/capturas/capt-1.png)
+![Captura de interaccion javascript- muestra la cordura en 40%](/img/capturas/capt-2.png)
+![Captura de interaccion javascript- muestra la cordura en 0%](/img/capturas/capt-3.png)
 
 ---
 
 ## Perfil — Rubén Darío Basconcelo
 
-La página de Rubén incorpora una interacción JavaScript propia vinculada con la presentación de su perfil.
+La página de Rubén incorpora una interacción JavaScript propia "El observatorio" vinculada con la presentación de su perfil.
 
 **Descripción:**
-[COMPLETAR CON LA INTERACCIÓN DEFINITIVA]
+
+1. Al hacer click en el botón, se activa una animación en el panel.
+2. Cada click muestra un mensaje distinto, recorriendo una lista de frases misteriosas.
+3. Después de varias consultas, el botón cambia su texto a "Consultar nuevamente", simuando un ciclo narrativo
 
 **Captura:**
-`[INSERTAR CAPTURA]`
+![Captura de interaccion javascript- muestra el primer mensaje del recorrido](/img/capturas/capt-4-vasko.png)
+![Captura de interaccion javascript- muestra el tercer mensaje del recorrido](/img/capturas/capt-5-vasko.png)
+![Captura de interaccion javascript- muestra el otro mensaje del recorrido](/img/capturas/capt-6-vasko.png)
 
 ---
 
 ## Perfil — Sergio David Pasini Cabello
 
-La página de Sergio incorpora una interacción JavaScript propia vinculada con la presentación de su perfil.
+La página de Sergio incorpora una interacción JavaScript propia " El observatorio 2" vinculada con la presentación de su perfil.
 
 **Descripción:**
-[COMPLETAR CON LA INTERACCIÓN DEFINITIVA]
+
+1. Al hacer click en el botón, se activa una animación en el panel e inicia un disparador de observaciones narrativas.
+2. Cada click muestra un mensaje distinto, reinicia la animación del mapa estelar.
+3. Después de varias consultas, el botón cambia su texto a "Reiniciar obsevación", simuando un ciclo narrativo
 
 **Captura:**
-`[INSERTAR CAPTURA]`
+![Captura de interaccion javascript- muestra el primer mensaje del recorrido](/img/capturas/capt-7-sergio.png)
+![Captura de interaccion javascript- muestra el primer mensaje del recorrido](/img/capturas/capt-8-sergio.png)
 
 ---
 
 ## Perfil — Integrante 03
 
-El perfil incorpora una interacción JavaScript propia.
+El perfil incorpora una interacción JavaScript propia "Buceo en el vacio".
 
 **Descripción:**
-[COMPLETAR]
+
+1. Al hacer click en el botón, se activa un disparador frases misteriosas.
+2. Cada click muestra un mensaje distinto.
+3. Después de varias consultas, el botón cambia su texto a "Consultar nuevamente", simuando un ciclo narrativo
 
 **Captura:**
-`[INSERTAR CAPTURA]`
+![Captura de interaccion javascript- muestra el primer mensaje del recorrido](/img/capturas/capt-9-juanse.png)
+![Captura de interaccion javascript- muestra otro mensaje del recorrido](/img/capturas/capt-10-juanse.png)
 
 ---
 
 ## Perfil — Integrante 04
 
-El perfil incorpora una interacción JavaScript propia.
+El perfil incorpora una interacción JavaScript propia, "Susurros del vacio cosmico".
 
 **Descripción:**
-[COMPLETAR]
+
+1. Al hacer click en el botón, se activa un disparador de ritual visual y narrativo.
+2. Cada click hace que el circulo cambie de color, se reactive su animación y muestre un nuevo "susurro".
+
+Simula que el portal cósmico responde progresivamente a las invocaciones del usuario
 
 **Captura:**
-`[INSERTAR CAPTURA]`
+![Captura de interaccion javascript- muestra el portal titilando esperando ser invocado](/img/capturas/capt-12-alvaro.png)
+![Captura de interaccion javascript- muestra el una frese del portal](/img/capturas/capt-11-alvaro.png)
 
 ---
 
-# 📱 Diseño responsive
+# Diseño responsive
 
 El sitio fue desarrollado considerando diferentes tamaños de pantalla.
 
@@ -304,7 +324,7 @@ Se revisaron:
 
 ---
 
-# 📓 Bitácora
+# Bitácora
 
 La sección **Bitácora** documenta la evolución del proyecto y permite reconstruir las principales decisiones tomadas durante el desarrollo.
 
@@ -327,7 +347,7 @@ La bitácora se encuentra disponible desde el menú principal del sitio.
 
 ---
 
-# 🤝 Organización y trabajo colaborativo
+# Organización y trabajo colaborativo
 
 El proyecto se organizó mediante responsabilidades principales para distribuir el trabajo, pero las decisiones relevantes fueron revisadas de manera conjunta.
 
@@ -350,7 +370,7 @@ La división de responsabilidades permitió organizar el trabajo sin convertir c
 
 ---
 
-# 🤖 Uso de Inteligencia Artificial
+# Uso de Inteligencia Artificial
 
 Durante el desarrollo se utilizaron herramientas de Inteligencia Artificial como asistentes técnicos y creativos.
 
