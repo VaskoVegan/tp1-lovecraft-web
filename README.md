@@ -39,7 +39,7 @@ El sitio reúne una portada general, perfiles individuales, navegación interna,
 
 **GitHub:** [Link al perfil de GitHub](https://github.com/cspasini)
 
-### 03 · Juan Sebastián Páez Horbat
+### 03 · Juan Sebastián Páez Horbath
 
 **Responsabilidad principal:** JavaScript e interactividad
 
@@ -448,7 +448,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ---
 
-## Perfil — Juan Sebastián Páez Horbat
+## Perfil — Juan Sebastián Páez Horbath
 
 El perfil incorpora una interacción JavaScript propia "Buceo en el vacio".
 
@@ -649,11 +649,15 @@ La IA también se utilizó como herramienta de discusión para evaluar alternati
 
 La IA fue utilizada como apoyo, pero el código incorporado al proyecto fue revisado, adaptado
 
-## URL Publicación en Vercel
+---
+
+# URL Publicación en Vercel
 
 [Link al sitio pulicado en Vercel](https://tp1-lovecraft-web.vercel.app/)
 
-## Evolución del sitio
+---
+
+# Evolución del sitio
 
 El sitio puede crecer en tres direcciones: estética narrativa, interactividad funcional y robustez técnica.
 
